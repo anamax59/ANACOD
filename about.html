@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ANACOD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        
+@font-face {
+    font-family: 'Square Game';
+    src: url('fonts/Square-Game.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+        .container {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-family: 'Square Game', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #14196a 0%, #60a5fa 55%, #e5eaf5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            letter-spacing: -0.02em;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 2rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .nav-link {
+            color: #9ca3af;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #60a5fa;
+        }
+
+
+
+        .about-section {
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 3rem;
+        }
+
+        .about-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .about-subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+            html {
+                background: #0a0a0a !important;
+            }
+            body {
+                background: transparent !important;
+            }
+
+        @media (min-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            .title {
+                font-size: 10rem;
+            }
+            .contact-title {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                background: #0a0a0a !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            body {
+                background: transparent !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            .container {
+                max-width: 100vw !important;
+                padding: 0 0.5rem !important;
+                margin: 0 !important;
+                box-sizing: border-box !important;
+            }
+            .logo, .title {
+                font-size: 3rem !important;
+                word-break: break-word;
+            }
+        }   
+
+
+        .story-card, .mission-card, .skills-card {
+            background: rgba(15, 15, 15, 0.8);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .card-icon {
+            width: 24px;
+            height: 24px;
+            color: #34d399;
+        }
+
+        .card-text {
+            color: #9ca3af;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-category {
+            background: rgba(15, 15, 15, 0.6);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .skill-category-title {
+            font-weight: 600;
+            color: #34d399;
+            margin-bottom: 1rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-item {
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .skill-item::before {
+            content: "•";
+            color: #60a5fa;
+            position: absolute;
+            left: 0;
+        }
+
+        .values-section {
+            margin-top: 2rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(15, 15, 15, 0.4);
+            border-radius: 8px;
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        .value-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 1rem;
+            color: #34d399;
+        }
+
+        .value-title {
+            font-weight: 600;
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+        }
+
+        .value-text {
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            background: rgba(15, 15, 15, 0.9);
+            border-top: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-copyright {
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+
+        #spiderWeb {
+            position: fixed !important;
+            top: 0; left: 0;
+            width: 100vw !important;
+            height: 100vh !important;
+            z-index: -1 !important;
+            pointer-events: none !important;
+            background: transparent !important;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="spiderWeb"></canvas>
+    
+
+    
+    <div class="container">
+        <h1 class="title">ANACOD</h1>
+        <p class="subtitle">Décodons votre succès</p>
+        
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="about.html" class="nav-link active">Qui suis-je</a>
+        </nav>
+
+        <div class="about-section">
+            <h2 class="about-title">À propos d'ANACOD</h2>
+            <p class="about-subtitle">Solutions digitales innovantes pour transformer votre entreprise et atteindre vos objectifs.</p>
+            
+            <div class="about-content">
+                <div class="story-card">
+                    <h3 class="card-title">
+                        <svg class="card-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Notre Histoire</span>
+                    </h3>
+                    <p class="card-text">ANACOD a été fondée avec une vision simple mais puissante : combler le fossé entre la technologie innovante et le succès commercial. Nous croyons que chaque entreprise, quelle que soit sa taille, mérite d'avoir accès à des solutions digitales de pointe qui favorisent la croissance et l'efficacité.</p>
+                                      <p class="card-text">
+    Une passion pour l'expérience digitale guide une évolution constante et des résultats concrets. Chaque solution vise l'optimisation et la confiance durable, toujours à la pointe des tendances technologiques.
+</p></div>
+
+<div class="mission-card">
+    <h3 class="card-title">
+        <svg class="card-icon" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+        <span>Ma Mission</span>
+    </h3>
+    <p class="card-text">
+        Accompagner entreprises et particuliers dans la réussite numérique grâce à des solutions complètes et sur mesure pour chaque défi et opportunité. Partenaire de confiance pour la transformation digitale, avec des résultats concrets et durables.
+    </p>
+    <div class="values-section">
+        <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 1rem;">
+            <span>Mes Valeurs</span>
+        </h4>
+        <div class="values-grid">
+            <div class="value-item">
+                <svg class="value-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <h5 class="value-title">Excellence</h5>
+                <p class="value-text">
+                    Chaque projet est mené avec rigueur et exigence, pour des solutions qui dépassent les attentes.
+                </p>
+            </div>
+            <div class="value-item">
+                <svg class="value-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                </svg>
+                <h5 class="value-title">Innovation</h5>
+                <p class="value-text">
+                    Technologies de pointe et créativité pour des solutions innovantes.
+                </p>
+            </div>
+            <div class="value-item">
+                <svg class="value-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <h5 class="value-title">Confiance</h5>
+                <p class="value-text">
+                    Transparence et fiabilité sont la base de relations professionnelles durables.
+                </p>
+            </div>
+            <div class="value-item">
+                <svg class="value-icon" fill="currentColor" viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="8" stroke="#34d399" stroke-width="2" fill="none"/>
+                    <path d="M7 13c2 1.5 4-1 6-3" stroke="#60a5fa" stroke-width="2" fill="none"/>
+                </svg>
+                <h5 class="value-title">Imagination</h5>
+                <p class="value-text">
+                    Idées originales et vision créative pour des solutions uniques à chaque projet.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="skills-card">
+    <h3 class="card-title">
+        <svg class="card-icon" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3a2 2 0 012 0v1a1 1 0 102 0V3a2 2 0 012 2v6h-1a1 1 0 100 2h1v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2h1a1 1 0 100-2H4V5zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5 0a1 1 0 10-2 0v6a1 1 0 102 0V8z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Mon Expertise</span>
+    </h3>
+    <p class="card-text"
+       data-en="ANATOUCH offers a complete range of digital and IT services: website and online store creation, logo and visual design, flyers, business cards, photo and video editing, and content writing. I provide IT troubleshooting, security audits, network and cloud setup, and virus removal. My expertise covers social media management (Instagram, TikTok, YouTube, Twitch, Discord), digital marketing, ad campaigns, SEO, newsletters, and automation. I also offer consulting and training, advice on crypto, PC/mobile purchases, and project management. Whatever your need 'design, security, crypto, video, or digital strategy' ANATOUCH delivers tailored, reliable, and creative solutions."
+       data-fr="ANATOUCH propose une gamme complète de services numériques et informatiques : création de sites web et boutiques en ligne, design de logos, flyers, cartes de visite, montage photo et vidéo, rédaction de contenus. J'assure le dépannage informatique, les audits de sécurité, l’installation réseau et cloud, la suppression de virus. Mon expertise inclut la gestion des réseaux sociaux (Instagram, TikTok, YouTube, Twitch, Discord), le marketing digital, les campagnes publicitaires, le SEO, les newsletters et l’automatisation. J'offre aussi du conseil et de la formation, des recommandations en crypto, achat PC/mobile, et gestion de projet. Quel que soit votre besoin : design, sécurité, crypto, vidéo ou stratégie digitale, ANATOUCH vous apporte des solutions sur mesure, fiables et créatives.">
+    <p class="card-text">
+        ANACOD propose une gamme complète de services numériques et informatiques : création de sites web et boutiques en ligne, design de logos, flyers, cartes de visite, montage photo et vidéo, rédaction de contenus. J'assure le dépannage informatique, les audits de sécurité, l'installation réseau et cloud, la suppression de virus. Mon expertise inclut la gestion des réseaux sociaux (Instagram, TikTok, YouTube, Twitch, Discord), le marketing digital, les campagnes publicitaires, le SEO, les newsletters et l'automatisation. J'offre aussi du conseil et de la formation, des recommandations en crypto, achat PC/mobile, et gestion de projet. Quel que soit votre besoin : design, sécurité, crypto, vidéo ou stratégie digitale, ANACOD vous apporte des solutions sur mesure, fiables et créatives.
+    </p>
+    </p>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h4 class="skill-category-title">Web & Design</h4>
+            <ul class="skill-list">
+                <li class="skill-item">Création de sites web et boutiques en ligne</li>
+                <li class="skill-item">Design de logos, flyers, cartes de visite</li>
+                <li class="skill-item">Montage photo & vidéo</li>
+                <li class="skill-item">Rédaction et traduction de contenus</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4 class="skill-category-title">Informatique & Sécurité</h4>
+            <ul class="skill-list">
+                <li class="skill-item">Dépannage & maintenance</li>
+                <li class="skill-item">Installation réseau & cloud</li>
+                <li class="skill-item">Audit de sécurité & suppression de virus</li>
+                <li class="skill-item">Montage et optimisation de PC</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4 class="skill-category-title">Réseaux sociaux & Marketing</h4>
+            <ul class="skill-list">
+                <li class="skill-item">Instagram, TikTok, YouTube, Twitch, Discord</li>
+                <li class="skill-item">Community management & automatisation</li>
+                <li class="skill-item">Campagnes publicitaires & SEO</li>
+                <li class="skill-item">Newsletter & publication automatique</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4 class="skill-category-title">Conseil & Formation</h4>
+            <ul class="skill-list">
+                <li class="skill-item">Formations informatiques & supports pédagogiques</li>
+                <li class="skill-item">Conseil crypto & stratégie digitale</li>
+                <li class="skill-item">Conseil achat PC/mobile</li>
+                <li class="skill-item">Gestion de projet & accompagnement personnalisé</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">ANACOD</h3>
+            <p class="footer-copyright">© 2024 ANACOD. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        function initSpiderWeb() {
+            const canvas = document.getElementById('spiderWeb');
+            const ctx = canvas.getContext('2d');
+            
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+            
+            const nodes = [];
+            const nodeCount = 50;
+            
+            for (let i = 0; i < nodeCount; i++) {
+                nodes.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5
+                });
+            }
+            
+            let mouseX = 0;
+            let mouseY = 0;
+            
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+            
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Update nodes
+                nodes.forEach(node => {
+                    node.x += node.vx;
+                    node.y += node.vy;
+                    
+                    if (node.x < 0 || node.x > canvas.width) node.vx *= -1;
+                    if (node.y < 0 || node.y > canvas.height) node.vy *= -1;
+                    
+                    // Mouse interaction
+                    const dx = mouseX - node.x;
+                    const dy = mouseY - node.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 100) {
+                        node.x += dx * 0.01;
+                        node.y += dy * 0.01;
+                    }
+                });
+                
+                // Draw connections
+                ctx.strokeStyle = 'rgba(96, 165, 250, 0.1)';
+                ctx.lineWidth = 1;
+                
+                for (let i = 0; i < nodes.length; i++) {
+                    for (let j = i + 1; j < nodes.length; j++) {
+                        const dx = nodes[i].x - nodes[j].x;
+                        const dy = nodes[i].y - nodes[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (distance < 150) {
+                            ctx.beginPath();
+                            ctx.moveTo(nodes[i].x, nodes[i].y);
+                            ctx.lineTo(nodes[j].x, nodes[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                
+                // Draw nodes
+                ctx.fillStyle = 'rgba(96, 165, 250, 0.3)';
+                nodes.forEach(node => {
+                    ctx.beginPath();
+                    ctx.arc(node.x, node.y, 2, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+                
+                requestAnimationFrame(animate);
+            }
+            
+            animate();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initSpiderWeb();
+        });
+    </script>
+
+    <!-- À placer avant </body> sur chaque page -->
+<button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+    ↑
+</button>
+<script>
+    window.addEventListener('scroll', () => {
+        const scrollToTop = document.getElementById('scrollToTop');
+        if (window.scrollY > 100) {
+            scrollToTop.classList.add('visible');
+        } else {
+            scrollToTop.classList.remove('visible');
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+    <style>
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(96, 165, 250, 0.8);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+        }
+    </style>
+</body>
+</html>

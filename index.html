@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>ANACOD - Décodons Votre Succès Digital</title>
+    <meta name="description" content="ANACOD propose des services de développement web, création de sites, logos, montage vidéo, community management et formations informatiques. Décodons ensemble votre succès digital.">
+    <meta name="keywords" content="développement web, création site internet, logo design, montage vidéo, community management, SEO, formations informatiques, ANACOD">
+    <meta name="author" content="ANACOD">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="fr">
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:title" content="ANACOD - Décodons Votre Succès Digital">
+    <meta property="og:description" content="Services professionnels de développement web, design et solutions digitales. Premier rendez-vous gratuit.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anamax59.github.io/ANACOD">
+    <meta property="og:image" content="https://anamax59.github.io/ANACOD/images/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="ANACOD">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ANACOD - Décodons Votre Succès Digital">
+    <meta name="twitter:description" content="Services professionnels de développement web, design et solutions digitales.">
+    <meta name="twitter:image" content="https://anamax59.github.io/ANACOD/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/media/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://anamax59.github.io/ANACOD">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ANACOD",
+      "url": "https://anamax59.github.io/ANACOD",
+      "logo": "https://anamax59.github.io/ANACOD/images/logo.png",
+      "description": "Services professionnels de développement web, design et solutions digitales",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "contact@anacod.fr"
+      },
+      "sameAs": [
+        "https://linkedin.com/company/anacod",
+        "https://twitter.com/anacod"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "description": "Premier rendez-vous gratuit pour tous nos services"
+      }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+     body {
+            background: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            padding: 1.5rem 0 0.5rem 0;
+            line-height: 1 !important;
+            margin: 0;
+        }
+
+        .logo {
+            font-family: 'Inter', cursive;
+            font-size: 5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        @font-face {
+        font-family: 'Square Game';
+        src: url('fonts/Square-Game.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        .rain-overlay {
+        position: relative;
+        width: 100%;
+        height: 120px;
+        margin-top: -120px;
+        pointer-events: none;
+        }
+
+        .rain-overlay svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 120px;
+        z-index: 2;
+        pointer-events: none;
+        }
+
+        
+        .title {
+            font-family: 'Square Game', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #14196a 0%, #60a5fa 55%, #e5eaf5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            letter-spacing: -0.02em;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+            /* Gouttes de pluie animées sur le h1.title */
+        .title::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 2;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(96,165,250,0.25) 0 10px, transparent 11px),
+                radial-gradient(circle at 70% 60%, rgba(52,211,153,0.18) 0 8px, transparent 9px),
+                radial-gradient(circle at 40% 80%, rgba(255,255,255,0.15) 0 6px, transparent 7px),
+                radial-gradient(circle at 80% 20%, rgba(96,165,250,0.18) 0 7px, transparent 8px);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation: rainDrops 3s infinite linear;
+            }
+
+        @keyframes rainDrops {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+
+        .title-sticky {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+
+        }
+
+        .header h1.title + p.subtitle {
+        margin-top: -0.5rem;
+        }
+
+        .subtitle {
+            font-family: 'Inter', cursive;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-align: center;
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2rem;
+            margin-top: -0.5rem !important;
+            padding-top: 0 !important;
+            line-height: 1 !important;
+            display: block;
+            letter-spacing: 0.5em;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        /* Keeping the free consultation highlight styling */
+        .free-consultation-highlight {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(16, 185, 129, 0.1));
+            border: 2px solid #50c429;
+            border-radius: 15px;
+            padding: 1rem;
+            margin: 1rem auto;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(34, 197, 94, 0.2);
+            animation: pulse-green 2s infinite;
+            max-width: 900px;
+        }
+
+        @keyframes pulse-green {
+            0%, 100% { box-shadow: 0 8px 25px rgba(34, 197, 94, 0.2); }
+            50% { box-shadow: 0 12px 35px rgba(34, 197, 94, 0.4); }
+        }
+
+        .free-consultation-highlight h3 {
+            color: #70bd23;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .free-consultation-highlight p {
+            color: #7b5d5d;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .free-consultation-highlight .cta-button {
+            background: linear-gradient(135deg, #50c429, #16a34a);
+            color: #000000;
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .free-consultation-highlight .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px #22c55e4d;
+        }
+
+        .hero {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fff, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #9ca3af;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        
+        
+
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 600px;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: #60a5fa;
+            box-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+        }
+
+        .search-input::placeholder {
+            color: #9ca3af;
+        }
+
+        .quick-ideas {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0.25rem; /* moins d'espace entre les lignes et colonnes */
+          max-width: 600px;
+          margin: 1rem auto; /* réduit aussi l'espace autour */
+        }
+
+        .quick-idea-btn {
+          font-size: 0.8rem;
+          padding: 0.35rem 0.8rem;
+          border-radius: 20px;
+          border: 1px solid rgba(255,255,255,0.15);
+          background: rgba(255,255,255,0.07);
+          color: #fff;
+          font-family: inherit;
+          cursor: pointer;
+          transition: background 0.2s, border-color 0.2s;
+          white-space: nowrap;
+          flex: 0 0 auto;
+          min-width: unset;
+          margin-bottom: 0.3rem;
+        }
+
+        .quick-idea-btn:hover {
+          background: rgba(96, 165, 250, 0.18);
+          border-color: #60a5fa;
+          color: #60a5fa;
+        }
+
+        /* Reverting to simple services grid layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #60a5fa;
+            box-shadow: 0 10px 30px rgba(96, 165, 250, 0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #60a5fa;
+        }
+
+        .service-card p {
+            color: #9ca3af;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .service-price {
+            color: #60a5fa;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .service-duration {
+            color: #9ca3af;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        html {
+            background: #0a0a0a !important;
+        }
+        body {
+            background: transparent !important;
+        }
+
+        .service-btn {
+          background: linear-gradient(135deg, #60a5fa, #34d399);
+          color: #fff;
+          border: none;
+          padding: 0.5rem 1.1rem;
+          border-radius: 18px;
+          font-weight: 600;
+          font-size: 0.95rem;
+          cursor: pointer;
+          transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+          box-shadow: 0 2px 8px rgba(96,165,250,0.10);
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+          display: inline-block;
+          letter-spacing: 0.01em;
+        }
+        .service-btn:hover {
+          background: linear-gradient(135deg, #34d399, #60a5fa);
+          color: #fff;
+          transform: translateY(-2px) scale(1.04);
+          box-shadow: 0 6px 20px #60a5fa33;
+        }
+
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 0;
+            z-index: 1000;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .sticky-nav.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sticky-nav .logo {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .sticky-nav .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .sticky-nav .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        .sticky-nav .nav-links a:hover {
+            color: #60a5fa;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem; 
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .footer {
+            background: rgba(255, 255, 255, 0.05);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        #spiderWeb {
+          position: fixed !important;
+          top: 0; left: 0;
+          width: 100vw !important;
+          height: 100vh !important;
+          z-index: -1 !important;
+          pointer-events: none !important;
+          background: transparent !important;
+        }
+
+
+            .contact-title {
+             font-family: 'Inter', cursive;
+             font-size: 1.4rem;
+             font-weight: 700;
+             color: rgba(255, 255, 255, 0.8);
+             text-transform: uppercase;
+             letter-spacing: 0.15em;
+            }
+
+          .scroll-to-services-btn {
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 0.5rem 1.2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(96,165,250,0.10);
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: bounceDown 1.2s infinite;
+            margin-bottom: 0.5rem;
+          }
+
+          @keyframes bounceDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+          }
+
+
+
+
+        @media (min-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            .title {
+                font-size: 10rem;
+            }
+            .contact-title {
+                font-size: 3rem;
+            }
+        }   
+
+
+
+        @media (max-width: 1200px) {
+          .service-card {
+            margin-left: 0.5rem !important;
+            margin-right: 0.5rem !important;
+          }
+        }
+
+        /* Media query pour très petits écrans (moins de 272px) */
+        @media (max-width: 271px) {
+            .subtitle {
+                font-size: 0.45rem !important;
+                letter-spacing: 0.2em !important;
+                max-width: 90% !important;
+                margin: -0.5rem auto 2rem auto !important;
+            }
+        }
+
+        /* Media query pour écrans 272px à 414px */
+        @media (max-width: 414px) and (min-width: 272px) {
+            .subtitle {
+                font-size: 0.55rem !important;
+                letter-spacing: 0.3em !important;
+                max-width: 85% !important;
+                margin: -0.5rem auto 2rem auto !important;
+            }
+        }
+
+        /* Media query pour écrans 415px à 768px */
+        @media (max-width: 768px) and (min-width: 415px) {
+            .title {
+                font-size: 6rem !important; /* 33% plus grand que 3rem */
+                word-break: break-word;
+            }
+            .subtitle {
+                font-size: 1.1rem !important;
+                letter-spacing: 0.4em !important;
+                max-width: 90% !important;
+                margin: -0.5rem auto 2rem auto !important;
+            }
+        }
+
+        /* Pour les écrans inférieurs à 415px, garder la taille originale */
+        @media (max-width: 414px) {
+            .title {
+                font-size: 3rem !important;
+                word-break: break-word;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+          .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr)); /* Force 2 colonnes même sur petit écran */
+            gap: 0.4rem !important; /* Réduit l'espace entre les services */
+            margin: 1rem 0 !important;
+            }
+            html {
+              background: #0a0a0a !important;
+              width: 100vw !important;
+              max-width: 100vw !important;
+              overflow-x: hidden !important;
+            }
+            body {
+              background: transparent !important;
+              width: 100vw !important;
+              max-width: 100vw !important;
+              overflow-x: hidden !important;
+            }
+            .container {
+              padding-left: 0.25rem !important;
+              padding-right: 0.25rem !important;
+              max-width: 100vw !important;
+              box-sizing: border-box !important;
+            }
+            .logo {
+              font-size: 3rem !important;
+              word-break: break-word;
+            }
+            
+            /* Titre sera géré par les media queries spécifiques plus bas */
+
+            .quick-idea-btn {
+              font-size: 0.65rem;
+              padding: 0.28rem 0.6rem;
+              border-radius: 16px;
+            }
+
+              .quick-ideas {
+              margin-left: 0.5rem;
+              margin-right: 0.5rem;
+            }
+
+              .service-card {
+                margin-right: 0.5rem !important;
+                margin-left: 0.5rem !important;
+              }
+          }
+
+          @media (max-width: 414px) {
+            .quick-ideas,
+            .search-container,
+            .free-consultation-highlight,
+            .contact-title {
+              margin-left: 0.5rem !important;
+              margin-right: 0.5rem !important;
+            }
+
+            .free-consultation-highlight h3 {
+              font-size: 1.2rem !important;
+            }
+            .free-consultation-highlight .cta-button {
+              font-size: 0.9rem !important;
+              padding: 0.7rem 1.2rem !important;
+            }
+            .contact-title,
+            .service-card h3 {
+              font-size: 0.7rem !important;
+            }
+
+            .service-card {
+              margin-right: 0.5rem !important;
+              margin-left: 0.5rem !important;
+            }
+
+            .service-card p {
+               font-size: 0.75rem !important;
+            }
+              .service-btn {
+              font-size: 0.8rem !important;
+              padding: 0.4rem 0.8rem !important;
+            }
+
+             .footer p, .footer nav a {
+                font-size: 0.7rem !important;
+              }
+
+              .services-grid {
+                gap: 0.4rem !important; /* Réduit l'espace entre les services */
+                margin: 1rem 0 !important;
+              }
+          }
+
+
+
+
+            .modal {
+                /* NE PAS mettre display: flex ici ! */
+                position: fixed !important;
+                top: 0; left: 0; right: 0; bottom: 0;
+                width: 100vw !important;
+                height: 100vh !important;
+                align-items: center !important;
+                justify-content: center !important;
+                background: rgba(0,0,0,0.7) !important;
+                z-index: 9999 !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                touch-action: none;
+                overflow: hidden !important;
+              }
+            .modal-content {
+                width: 95vw !important;
+                max-width: 400px !important;
+                min-width: 0 !important;
+                margin: 0 auto !important;
+                left: 0 !important;
+                right: 0 !important;
+                padding: 1rem !important;
+                font-size: 1rem;
+                box-sizing: border-box;
+                border-radius: 15px !important;
+                background: #181818;
+                overflow: visible !important;
+              }
+
+            .scroll-to-top {
+                right: 1rem !important;
+                bottom: 1rem !important;
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 1.5rem !important;
+                z-index: 10001 !important;
+                display: block !important;
+              }
+
+
+
+          .contact-title {
+                font-size: 0.9rem;
+            }
+
+
+
+            .language-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 0.2rem;
+            margin: 1rem 0;
+            }
+
+            .hero  {
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                display: grid;
+              /*  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+                gap: 2rem;
+                margin: 3rem 0;
+            }
+            
+
+
+            .sticky-nav .nav-links a {
+            font-size: 1.6rem;
+        }
+
+            .sticky-nav .nav-links {
+                display: flex;
+                gap: 1rem;
+            }
+                
+
+
+                .lang-button {
+                    font-size: 0.7rem;
+                    padding: 0.4rem 0.8rem;
+                }
+                .sticky-nav .logo,
+                .title-sticky {
+                    font-size: 1.6rem;
+                }
+
+/* Ajoute dans le <style> */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  display: none;
+}
+.modal[style*="display: block"] {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+   
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="spiderWeb"></canvas>
+    
+    <div class="sticky-nav" id="stickyNav">
+        <div class="container">
+            <h2 class="title-sticky">ANACOD</h1>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">CV</a>
+            </nav>
+
+        </div>
+    </div>
+
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+        ↑
+    </button>
+    
+    <div class="container">
+        <header class="header"><h1 class="title">ANACOD</h1>
+<div class="rain-overlay">
+  <svg width="100%" height="100%" viewBox="0 0 600 120" style="position:absolute;top:0;left:0;pointer-events:none;">
+    <circle cx="60" cy="0" r="7" fill="#60a5fa" opacity="0.18">
+      <animate attributeName="cy" values="0;110;0" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="0" r="5" fill="#34d399" opacity="0.15">
+      <animate attributeName="cy" values="0;120;0" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="0" r="6" fill="#fff" opacity="0.12">
+      <animate attributeName="cy" values="0;100;0" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="240" cy="0" r="4" fill="#60a5fa" opacity="0.13">
+      <animate attributeName="cy" values="0;115;0" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="0" r="8" fill="#34d399" opacity="0.17">
+      <animate attributeName="cy" values="0;110;0" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="360" cy="0" r="5" fill="#fff" opacity="0.11">
+      <animate attributeName="cy" values="0;120;0" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="0" r="6" fill="#60a5fa" opacity="0.14">
+      <animate attributeName="cy" values="0;105;0" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="0" r="7" fill="#34d399" opacity="0.16">
+      <animate attributeName="cy" values="0;110;0" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="540" cy="0" r="5" fill="#fff" opacity="0.13">
+      <animate attributeName="cy" values="0;120;0" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="580" cy="0" r="6" fill="#60a5fa" opacity="0.12">
+      <animate attributeName="cy" values="0;100;0" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+</div>
+</div>
+        <p class="subtitle">DÉCODONS VOTRE SUCCÈS</p>
+         </header>
+
+        <section class="hero">
+           <h2 class="contact-title">Trouvez la solution idéale</h2>
+          
+        </section>
+
+
+        
+
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" 
+                   placeholder="Ex: site web, crypto, tiktok, pc, application, mobile..." 
+                   oninput="searchServices()">
+        </div>
+
+
+
+
+        <div class="quick-ideas">
+          <button class="quick-idea-btn" onclick="searchFromIdea('creation')">création</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('site web')">site web</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('e-commerce')">e-commerce</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('logo')">logo</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('musique')">musique</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('vidéo')">vidéo</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('photo')">photo</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('communauté')">communauté</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('publicité')">publicité</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('seo')">seo</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('formation')">formation</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('sécurité')">sécurité</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('cloud')">cloud</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('crypto')">crypto</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('tiktok')">tiktok</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('virus')">virus</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('pc')">pc</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('discord')">discord</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('app')">app</button>
+          <button class="quick-idea-btn" onclick="searchFromIdea('newsletter')">newsletter</button>
+        </div>
+
+          <div style="text-align: center; margin: 0.5rem 0;">
+            <button id="scrollToServicesBtn" class="scroll-to-services-btn">
+              ↓ Voir les services
+            </button>
+          </div>
+
+                <!-- Moved free consultation block here between ANATOUCH and hero section -->
+        <div class="free-consultation-highlight">
+            <h3>PREMIER RENDEZ-VOUS GRATUIT</h3>
+            <p>Discutons de votre projet et trouvons ensemble la meilleure solution</p>
+            <button class="cta-button" onclick="openBookingModal()">Réserver maintenant</button>
+        </div>
+
+        <!-- Reverted to simple services grid instead of categories -->
+        <div class="services-grid" id="servicesContainer">
+            <!-- Services will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2020-2025 ANACOD. Tous droits réservés.</p>
+            <nav style="margin-top: 1rem;">
+                <a href="contact.html" style="color: #60a5fa; text-decoration: none; margin: 0 1rem;">Contact</a>
+                <a href="about.html" style="color: #60a5fa; text-decoration: none; margin: 0 1rem;">Qui suis-je</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+const services = [
+  {
+    id: 1,
+    icon: "🌐",
+    title: { en: "Website Creation", fr: "Création de sites web" },
+    description: { en: "Design and development of showcase, e-commerce or custom websites.", fr: "Conception et développement de sites vitrines, e-commerce ou sur mesure." },
+    keywords: [
+      // EN
+      "website", "web creation", "web development", "showcase", "e-commerce", "custom website", "web design", "responsive", "html", "css", "wordpress", "shop", "landing page", "optimization", "hosting", "domain name", "SEO", "redesign", "update", "deploy", "publish", "site", "online store",
+      // FR
+      "site web", "création", "développement", "vitrine", "e-commerce", "webdesign", "conception", "responsive", "html", "css", "wordpress", "boutique", "landing page", "optimisation", "hébergement", "nom de domaine", "SEO", "design", "refonte", "mise à jour", "déployer", "publier"
+    ]
+  },
+  {
+    id: 2,
+    icon: "🛠️",
+    title: { en: "Website Maintenance", fr: "Maintenance de sites web" },
+    description: { en: "Updates, fixes and ongoing optimization for your website.", fr: "Mises à jour, corrections et optimisation continue de votre site web." },
+    keywords: [
+      // EN
+      "maintenance", "website", "update", "support", "optimization", "fix", "security", "backup", "monitoring", "repair", "assistance", "surveillance", "reliability", "performance", "troubleshooting",
+      // FR
+      "maintenance", "web", "mise à jour", "support", "optimisation", "corriger", "sécurité", "sauvegarde", "backup", "monitoring", "réparer", "assistance", "surveillance", "fiabilité", "performance"
+    ]
+  },
+  {
+    id: 3,
+    icon: "🎨",
+    title: { en: "Logo Creation", fr: "Création de logos" },
+    description: { en: "Custom logo design for your brand or business.", fr: "Design de logos personnalisés pour votre marque ou entreprise." },
+    keywords: [
+      // EN
+      "logo", "design", "graphic", "brand", "visual identity", "creation", "custom", "branding", "illustration", "emblem", "creative", "vector", "image", "graphic charter", "identity", "personalization",
+      // FR
+      "logo", "design", "graphisme", "marque", "identité visuelle", "création", "personnaliser", "branding", "illustration", "emblème", "créatif", "vectoriel", "image", "charte graphique", "identité", "personnalisation"
+    ]
+  },
+  {
+    id: 4,
+    icon: "📰",
+    title: { en: "Flyers & Posters", fr: "Création de flyers et affiches" },
+    description: { en: "Graphic design for events, promotions and advertising.", fr: "Conception graphique pour vos événements, promotions et publicités." },
+    keywords: [
+      // EN
+      "flyer", "poster", "advertising", "promotion", "design", "event", "printing", "creation", "visual", "announcement", "distribution", "communication", "display", "graphic", "leaflet", "brochure",
+      // FR
+      "flyer", "affiche", "publicité", "promotion", "design", "événement", "impression", "création", "visuel", "annonce", "distribution", "communication", "affichage", "graphisme", "tract", "brochure"
+    ]
+  },
+  {
+    id: 5,
+    icon: "🎬",
+    title: { en: "Video Editing", fr: "Montage vidéo" },
+    description: { en: "Editing promotional, event or personal videos.", fr: "Montage de vidéos promotionnelles, évènementielles ou personnelles." },
+    keywords: [
+      // EN
+      "video", "editing", "clip", "promotional", "effects", "transition", "music", "subtitles", "export", "publish", "youtube", "tiktok", "instagram", "retouch", "animation", "montage", "personal", "event",
+      // FR
+      "montage", "vidéo", "clip", "édition", "promotionnel", "effets", "transition", "musique", "sous-titres", "exporter", "publier", "youtube", "tiktok", "instagram", "retouche", "animation", "personnel", "événement"
+    ]
+  },
+  {
+    id: 6,
+    icon: "🖼️",
+    title: { en: "Photo Retouching", fr: "Retouche photo" },
+    description: { en: "Professional enhancement and retouching of your images.", fr: "Amélioration et retouche professionnelle de vos images." },
+    keywords: [
+      // EN
+      "photo", "retouch", "editing", "graphic", "enhancement", "filter", "correction", "color", "cropping", "clean", "optimize", "montage", "cutout", "image", "improvement", "professional",
+      // FR
+      "photo", "retouche", "édition", "graphisme", "amélioration", "filtre", "correction", "couleur", "recadrage", "nettoyer", "optimiser", "montage", "détourage", "retoucher", "image", "amélioration", "professionnel"
+    ]
+  },
+  {
+    id: 7,
+    icon: "👥",
+    title: { en: "Community Management", fr: "Community management" },
+    description: { en: "Management and animation of your social networks.", fr: "Gestion et animation de vos réseaux sociaux." },
+    keywords: [
+      // EN
+      "social media", "community manager", "management", "animation", "facebook", "instagram", "tiktok", "twitter", "linkedin", "engagement", "publication", "auto post", "automatic", "moderation", "interaction", "audience", "strategy",
+      // FR
+      "réseaux sociaux", "community manager", "gestion", "animation", "facebook", "instagram", "tiktok", "twitter", "linkedin", "engagement", "publication", "publication automatique", "automatique", "modération", "interaction", "audience", "stratégie"
+    ]
+  },
+  {
+    id: 8,
+    icon: "📢",
+    title: { en: "Ad Campaigns", fr: "Campagnes publicitaires" },
+    description: { en: "Creation and optimization of online ads on Facebook, Instagram, etc.", fr: "Création et optimisation de publicités en ligne sur Facebook, Instagram, etc." },
+    keywords: [
+      // EN
+      "advertising", "ads", "facebook", "instagram", "campaign", "targeting", "budget", "creation", "auto", "automatic", "optimization", "google ads", "promotion", "conversion", "statistics", "analysis", "marketing",
+      // FR
+      "publicité", "ads", "facebook", "instagram", "campagne", "ciblage", "budget", "création", "auto", "automatique", "optimisation", "google ads", "promotion", "conversion", "statistiques", "analyse", "marketing"
+    ]
+  },
+  {
+    id: 9,
+    icon: "🔍",
+    title: { en: "SEO", fr: "Référencement SEO" },
+    description: { en: "Optimization of your website for search engines.", fr: "Optimisation de votre site web pour les moteurs de recherche." },
+    keywords: [
+      // EN
+      "seo", "search engine", "optimization", "google", "tag", "keyword", "audit", "backlink", "ranking", "traffic", "visibility", "analysis", "content", "indexing", "referencing",
+      // FR
+      "seo", "référencement", "optimisation", "google", "moteur de recherche", "balise", "mot-clé", "audit", "backlink", "positionnement", "trafic", "visibilité", "analyse", "contenu", "indexation"
+    ]
+  },
+  {
+    id: 10,
+    icon: "🎓",
+    title: { en: "IT Training", fr: "Formations informatiques" },
+    description: { en: "Personalized courses on software, social networks and office tools.", fr: "Cours personnalisés sur logiciels, réseaux sociaux et bureautique." },
+    keywords: [
+      // EN
+      "training", "IT", "office", "social media", "course", "learn", "initiation", "excel", "word", "powerpoint", "teaching", "tutorial", "practice", "skill", "software", "education",
+      // FR
+      "formation", "informatique", "bureautique", "réseaux sociaux", "cours", "apprendre", "initiation", "excel", "word", "powerpoint", "enseignement", "tutoriel", "pratique", "compétence", "logiciel", "éducation"
+    ]
+  },
+  {
+    id: 11,
+    icon: "🛡️",
+    title: { en: "IT Security Audit", fr: "Audit de sécurité informatique" },
+    description: { en: "Network and system analysis to identify vulnerabilities.", fr: "Analyse de votre réseau et de vos systèmes pour identifier les failles." },
+    keywords: [
+      // EN
+      "security", "audit", "network", "cybersecurity", "protection", "check", "analysis", "vulnerability", "firewall", "antivirus", "encryption", "confidentiality", "risk", "prevention", "monitoring",
+      // FR
+      "sécurité", "audit", "réseau", "cybersécurité", "protection", "vérification", "analyse", "vulnérabilité", "firewall", "antivirus", "cryptage", "confidentialité", "risque", "prévention", "surveillance"
+    ]
+  },
+  {
+    id: 12,
+    icon: "🛒",
+    title: { en: "Online Store Creation", fr: "Création de boutiques en ligne" },
+    description: { en: "Design of e-commerce sites with secure payment.", fr: "Conception de sites e-commerce avec paiement sécurisé." },
+    keywords: [
+      // EN
+      "e-commerce", "online store", "payment", "sale", "website", "buy", "order", "transaction", "cart", "product", "shop", "purchase", "secure", "stripe", "paypal", "catalog", "commerce", "sell", "checkout",
+      // FR
+      "e-commerce", "boutique en ligne", "paiement", "vente", "site web", "acheter", "commander", "transaction", "panier", "produit", "shop", "achat", "sécurisé", "stripe", "paypal", "catalogue", "commerce", "vendre", "checkout"
+    ]
+  },
+  {
+    id: 13,
+    icon: "🖥️",
+    title: { en: "Network Installation", fr: "Installation réseau" },
+    description: { en: "Setup and configuration of IT networks.", fr: "Mise en place et configuration de réseaux informatiques." },
+    keywords: [
+      // EN
+      "network", "installation", "configuration", "IT", "wifi", "ethernet", "router", "switch", "connect", "secure", "setup", "sharing", "LAN", "topology", "diagnosis",
+      // FR
+      "réseau", "installation", "configuration", "informatique", "wifi", "ethernet", "routeur", "switch", "connecter", "sécuriser", "paramétrer", "partage", "LAN", "topologie", "diagnostic"
+    ]
+  },
+  {
+    id: 14,
+    icon: "🔧",
+    title: { en: "IT Troubleshooting", fr: "Dépannage informatique" },
+    description: { en: "Repair and problem solving on PC and Mac.", fr: "Réparation et résolution de problèmes sur PC et Mac." },
+    keywords: [
+      // EN
+      "troubleshooting", "repair", "computer", "pc", "mac", "bug", "failure", "diagnosis", "support", "assistance", "intervention", "maintenance", "replacement", "installation", "backup",
+      // FR
+      "dépannage", "réparation", "ordinateur", "pc", "mac", "bug", "panne", "diagnostic", "support", "assistance", "intervention", "maintenance", "remplacement", "installation", "sauvegarde"
+    ]
+  },
+  {
+    id: 15,
+    icon: "💳",
+    title: { en: "Business Card Design", fr: "Création de cartes de visite" },
+    description: { en: "Design and printing of professional business cards.", fr: "Design et impression de cartes de visite professionnelles." },
+    keywords: [
+      // EN
+      "business card", "design", "printing", "graphic", "creation", "customization", "contact", "company", "professional", "format", "paper", "logo", "identity",
+      // FR
+      "carte de visite", "design", "impression", "graphisme", "création", "personnalisation", "contact", "entreprise", "professionnel", "format", "papier", "logo", "identité"
+    ]
+  },
+  {
+    id: 16,
+    icon: "☁️",
+    title: { en: "Cloud Management", fr: "Gestion de cloud" },
+    description: { en: "Organization and secure backup of your online data.", fr: "Organisation et sauvegarde sécurisée de vos données en ligne." },
+    keywords: [
+      // EN
+      "cloud", "backup", "storage", "security", "organization", "data", "drive", "dropbox", "google", "sharing", "access", "synchronization", "server", "online", "cryptage",
+      // FR
+      "cloud", "sauvegarde", "stockage", "sécurité", "organisation", "données", "drive", "dropbox", "google", "partage", "accès", "synchronisation", "backup", "cryptage", "serveur", "en ligne"
+    ]
+  },
+  {
+    id: 17,
+    icon: "📑",
+    title: { en: "Presentation Creation", fr: "Création de présentations" },
+    description: { en: "Design of professional and impactful slides.", fr: "Conception de slides professionnelles et percutantes." },
+    keywords: [
+      // EN
+      "presentation", "powerpoint", "slides", "design", "professional", "conference", "talk", "visual", "animation", "structure", "layout", "support", "projection",
+      // FR
+      "présentation", "powerpoint", "slides", "design", "professionnel", "conférence", "exposé", "visuel", "animation", "structure", "mise en page", "support", "projection"
+    ]
+  },
+  {
+    id: 18,
+    icon: "💬",
+    title: { en: "Social Media Content Creation", fr: "Création de contenus pour réseaux sociaux" },
+    description: { en: "Visuals, videos and texts to boost your online presence.", fr: "Visuels, vidéos et textes adaptés pour booster votre présence en ligne." },
+    keywords: [
+      // EN
+      "content", "social media", "visual", "video", "marketing", "creation", "publication", "auto post", "automatic", "story", "post", "engagement", "animation", "text", "image", "tiktok", "instagram", "facebook", "online presence",
+      // FR
+      "contenu", "réseaux sociaux", "visuel", "vidéo", "marketing", "création", "publication", "publication automatique", "automatique", "story", "post", "engagement", "animation", "texte", "image", "tiktok", "instagram", "facebook", "présence en ligne"
+    ]
+  },
+  {
+    id: 19,
+    icon: "✉️",
+    title: { en: "Newsletter Creation", fr: "Création de newsletters" },
+    description: { en: "Design and sending of professional newsletters.", fr: "Conception et envoi de newsletters professionnelles." },
+    keywords: [
+      // EN
+      "newsletter", "email", "marketing", "design", "send", "creation", "subscription", "communication", "campaign", "mailing", "promotion", "audience", "statistics",
+      // FR
+      "newsletter", "email", "marketing", "design", "envoi", "création", "abonnement", "communication", "campagne", "mailing", "promotion", "audience", "statistiques"
+    ]
+  },
+  {
+    id: 20,
+    icon: "🌍",
+    title: { en: "Document Translation", fr: "Traduction de documents" },
+    description: { en: "Accurate translations in several languages.", fr: "Traductions précises en plusieurs langues." },
+    keywords: [
+      // EN
+      "translation", "document", "language", "english", "french", "spanish", "italian", "proofreading", "revision", "text", "website", "blog", "marketing", "communication",
+      // FR
+      "traduction", "document", "langue", "anglais", "français", "espagnol", "italien", "correction", "révision", "texte", "site web", "blog", "marketing", "communication"
+    ]
+  },
+  {
+    id: 21,
+    icon: "📝",
+    title: { en: "Content Writing", fr: "Rédaction de contenus" },
+    description: { en: "Optimized writing for websites, blogs and communication materials.", fr: "Rédaction optimisée pour sites web, blogs et supports de communication." },
+    keywords: [
+      // EN
+      "writing", "content", "seo", "blog", "communication", "article", "text", "copywriting", "optimization", "publication", "auto post", "automatic", "website", "social media", "marketing",
+      // FR
+      "rédaction", "contenu", "seo", "blog", "communication", "article", "texte", "copywriting", "optimisation", "publication", "publication automatique", "automatique", "site web", "réseaux sociaux", "marketing"
+    ]
+  },
+  {
+    id: 22,
+    icon: "📚",
+    title: { en: "Educational Materials", fr: "Création de supports pédagogiques" },
+    description: { en: "Design of documents and exercises for training.", fr: "Conception de documents et exercices pour la formation." },
+    keywords: [
+      // EN
+      "education", "training", "support", "document", "course", "exercise", "teaching", "learning", "sheet", "quiz", "teacher", "student", "school", "pedagogy",
+      // FR
+      "pédagogie", "formation", "support", "document", "cours", "exercice", "enseignement", "apprentissage", "fiche", "quiz", "éducation", "professeur", "élève", "école"
+    ]
+  },
+  {
+    id: 23,
+    icon: "📈",
+    title: { en: "Project Management", fr: "Gestion de projets" },
+    description: { en: "Planning and monitoring of your professional projects.", fr: "Planification et suivi de vos projets professionnels." },
+    keywords: [
+      // EN
+      "management", "project", "planning", "organization", "monitoring", "task", "deadline", "schedule", "coordination", "team", "goal", "strategy", "steering",
+      // FR
+      "gestion", "projet", "planification", "organisation", "suivi", "tâche", "deadline", "planning", "coordination", "équipe", "objectif", "stratégie", "pilotage"
+    ]
+  },
+  {
+    id: 24,
+    icon: "🔗",
+    title: { en: "QR Code Creation", fr: "Création de QR codes" },
+    description: { en: "Custom QR codes for your products and services.", fr: "QR codes personnalisés pour vos produits et services." },
+    keywords: [
+      // EN
+      "qr code", "custom", "product", "service", "design", "creation", "scan", "mobile", "printing", "website", "event", "promotion", "identification",
+      // FR
+      "qr code", "personnalisé", "produit", "service", "design", "création", "scan", "mobile", "impression", "site web", "événement", "promotion", "identification"
+    ]
+  },
+  {
+    id: 25,
+    icon: "📋",
+    title: { en: "Form Creation", fr: "Création de formulaires" },
+    description: { en: "Interactive forms tailored to your needs.", fr: "Formulaires interactifs et adaptés à vos besoins." },
+    keywords: [
+      // EN
+      "form", "interactive", "web", "data collection", "creation", "questionnaire", "survey", "registration", "response", "validation", "field", "recording",
+      // FR
+      "formulaire", "interactif", "web", "collecte", "données", "création", "questionnaire", "sondage", "inscription", "réponse", "validation", "champ", "enregistrement"
+    ]
+  },
+  {
+    id: 26,
+    icon: "📄",
+    title: { en: "Document Layout", fr: "Mise en page de documents" },
+    description: { en: "Professional formatting for your reports and presentations.", fr: "Mise en forme professionnelle pour vos rapports et présentations." },
+    keywords: [
+      // EN
+      "layout", "document", "report", "presentation", "design", "structure", "format", "editing", "creation", "printing", "support", "organization",
+      // FR
+      "mise en page", "document", "rapport", "présentation", "design", "structure", "format", "édition", "création", "impression", "support", "organisation"
+    ]
+  },
+  {
+    id: 27,
+    icon: "🖼️",
+    title: { en: "Image Optimization", fr: "Optimisation d'images" },
+    description: { en: "Compression and optimization for fast display.", fr: "Compression et optimisation pour un affichage rapide." },
+    keywords: [
+      // EN
+      "image", "optimization", "compression", "web", "fast", "retouch", "quality", "weight", "format", "jpeg", "png", "webp", "loading", "performance",
+      // FR
+      "image", "optimisation", "compression", "web", "rapide", "retouche", "qualité", "poids", "format", "jpeg", "png", "webp", "chargement", "performance"
+    ]
+  },
+  {
+    id: 28,
+    icon: "🖌️",
+    title: { en: "Banner Creation", fr: "Création de bannières" },
+    description: { en: "Web and social media banner design.", fr: "Design de bannières web et réseaux sociaux." },
+    keywords: [
+      // EN
+      "banner", "web", "design", "social media", "advertising", "creation", "visual", "promotion", "display", "image", "header", "cover", "animation",
+      // FR
+      "bannière", "web", "design", "réseaux sociaux", "publicité", "création", "visuel", "promotion", "affichage", "image", "header", "cover", "animation"
+    ]
+  },
+  {
+    id: 29,
+    icon: "⚙️",
+    title: { en: "Software Installation", fr: "Installation de logiciels" },
+    description: { en: "Setup and configuration of software as needed.", fr: "Mise en place et configuration de logiciels selon vos besoins." },
+    keywords: [
+      // EN
+      "software", "installation", "configuration", "computer", "setup", "program", "application", "update", "support", "settings", "windows", "mac", "utility",
+      // FR
+      "logiciel", "installation", "configuration", "ordinateur", "setup", "programme", "application", "mise à jour", "support", "paramétrage", "windows", "mac", "utilitaire"
+    ]
+  },
+  {
+    id: 30,
+    icon: "🎥",
+    title: { en: "Personal/Professional Video Creation", fr: "Réalisation de vidéos personnelles ou professionnelles" },
+    description: { en: "Creation of videos for holidays, rap clips or other projects.", fr: "Création de vidéos pour vacances, clips de rap ou autres projets." },
+    keywords: [
+      // EN
+      "video", "holiday", "clip", "rap", "editing", "creation", "music", "event", "youtube", "tiktok", "instagram", "film", "animation", "personal", "professional",
+      // FR
+      "vidéo", "vacances", "clip", "rap", "montage", "création", "édition", "musique", "événement", "youtube", "tiktok", "instagram", "film", "animation", "personnel", "professionnel"
+    ]
+  },
+  {
+    id: 31,
+    icon: "🎶",
+    title: { en: "Musical Medley Creation", fr: "Création de medleys musicaux" },
+    description: { en: "Mixing and chaining several songs for events.", fr: "Mixage et enchaînement de plusieurs musiques pour événements." },
+    keywords: [
+      // EN
+      "music", "medley", "mixing", "event", "fair", "dj", "playlist", "chain", "sound", "animation", "party", "remix", "audio",
+      // FR
+      "musique", "medley", "mixage", "événement", "kermesse", "dj", "playlist", "enchaînement", "son", "animation", "fête", "remix", "audio"
+    ]
+  },
+  {
+    id: 32,
+    icon: "🖨️",
+    title: { en: "Printer Repair", fr: "Réparation d'imprimantes" },
+    description: { en: "Troubleshooting and maintenance of your printers.", fr: "Dépannage et maintenance de vos imprimantes." },
+    keywords: [
+      // EN
+      "printer", "repair", "maintenance", "troubleshooting", "cartridge", "paper", "installation", "configuration", "support", "cleaning", "connect", "wifi",
+      // FR
+      "imprimante", "réparation", "maintenance", "dépannage", "cartouche", "papier", "installation", "configuration", "support", "nettoyage", "connecter", "wifi"
+    ]
+  },
+  {
+    id: 33,
+    icon: "📹",
+    title: { en: "Camera Troubleshooting", fr: "Dépannage de caméras" },
+    description: { en: "Repair and configuration of surveillance cameras.", fr: "Réparation et configuration de caméras de surveillance." },
+    keywords: [
+      // EN
+      "camera", "surveillance", "repair", "configuration", "installation", "security", "monitoring", "support", "diagnosis", "wifi", "recording", "video",
+      // FR
+      "caméra", "surveillance", "réparation", "configuration", "installation", "sécurité", "monitoring", "support", "diagnostic", "wifi", "enregistrement", "vidéo"
+    ]
+  },
+  {
+    id: 34,
+    icon: "🧹",
+    title: { en: "Computer Cleaning", fr: "Nettoyage d'ordinateur" },
+    description: { en: "Internal cleaning and performance optimization.", fr: "Nettoyage interne et optimisation des performances." },
+    keywords: [
+      // EN
+      "computer", "cleaning", "optimization", "pc", "performance", "dust removal", "maintenance", "support", "diagnosis", "speed up", "reliability", "security",
+      // FR
+      "ordinateur", "nettoyage", "optimisation", "pc", "performance", "dépoussiérage", "maintenance", "support", "diagnostic", "accélérer", "fiabilité", "sécurité"
+    ]
+  },
+  {
+    id: 35,
+    icon: "🖥️",
+    title: { en: "PC Assembly", fr: "Montage d'ordinateurs" },
+    description: { en: "Assembly and complete installation of your custom PC.", fr: "Assemblage et installation complète de votre PC sur mesure." },
+    keywords: [
+      // EN
+      "pc", "pc build", "assembly", "installation", "setup", "custom pc", "computer", "components", "processor", "memory", "graphics card", "case", "personalized", "configuration", "hardware", "desktop", "build", "customization",
+      // FR
+      "pc", "montage", "montage pc", "assemblage", "installation", "configuration", "ordinateur", "composant", "processeur", "mémoire", "carte graphique", "boîtier", "personnalisé", "matériel", "fixe", "sur mesure", "setup", "personnalisation"
+    ]
+  },
+  {
+    id: 36,
+    icon: "🗄️",
+    title: { en: "NAS Server Installation", fr: "Installation de serveur NAS" },
+    description: { en: "Setup and configuration of network storage.", fr: "Mise en place et configuration de stockage en réseau." },
+    keywords: [
+      // EN
+      "nas", "server", "storage", "network", "cloud", "installation", "configuration", "backup", "data", "sharing", "access", "security",
+      // FR
+      "nas", "serveur", "stockage", "réseau", "cloud", "installation", "configuration", "backup", "données", "partage", "accès", "sécurité"
+    ]
+  },
+  {
+    id: 37,
+    icon: "☁️",
+    title: { en: "Photo Cloud Management", fr: "Gestion de cloud photo" },
+    description: { en: "Organization and secure backup of your online photos.", fr: "Organisation et sauvegarde sécurisée de vos photos en ligne." },
+    keywords: [
+      // EN
+      "photo", "cloud", "storage", "organization", "backup", "sharing", "album", "security", "drive", "google", "dropbox", "online", "data",
+      // FR
+      "photo", "cloud", "stockage", "organisation", "sauvegarde", "partage", "album", "sécurité", "drive", "google", "dropbox", "backup", "en ligne", "données"
+    ]
+  },
+  {
+    id: 38,
+    icon: "📁",
+    title: { en: "Folder Organization", fr: "Organisation de dossiers" },
+    description: { en: "Sorting and optimal structuring of your files.", fr: "Tri et structuration optimale de vos fichiers." },
+    keywords: [
+      // EN
+      "folder", "organization", "file", "sorting", "classification", "structure", "archiving", "management", "optimization", "cleaning", "directory",
+      // FR
+      "dossier", "organisation", "fichier", "tri", "classement", "structure", "archivage", "gestion", "optimisation", "nettoyage", "répertoire"
+    ]
+  },
+  {
+    id: 39,
+    icon: "🔑",
+    title: { en: "Understanding Cryptocurrency", fr: "Comprendre la cryptomonnaie" },
+    description: { en: "Clear explanation of crypto concepts and functioning.", fr: "Explication claire du fonctionnement et des concepts de la crypto." },
+    keywords: [
+      // EN
+      "crypto", "bitcoin", "blockchain", "training", "explanation", "investment", "wallet", "security", "currency", "decentralized", "exchange", "buy", "cryptocurrency", "education",
+      // FR
+      "crypto", "bitcoin", "blockchain", "formation", "explication", "investissement", "wallet", "sécurité", "monnaie", "décentralisé", "échange", "achat", "cryptomonnaie", "éducation"
+    ]
+  },
+  {
+    id: 40,
+    icon: "💡",
+    title: { en: "Crypto Choice Advice", fr: "Conseil pour choisir une cryptomonnaie" },
+    description: { en: "Help choosing cryptos suited to your goals.", fr: "Aide au choix des cryptos adaptées à vos objectifs." },
+    keywords: [
+      // EN
+      "crypto", "advice", "investment", "bitcoin", "altcoin", "selection", "analysis", "strategy", "buy", "portfolio", "research", "currency", "choice",
+      // FR
+      "crypto", "conseil", "investissement", "bitcoin", "altcoin", "sélection", "analyse", "stratégie", "achat", "portefeuille", "recherche", "monnaie", "choix"
+    ]
+  },
+  {
+    id: 41,
+    icon: "📈",
+    title: { en: "Stock/Crypto Strategy", fr: "Stratégie en bourse ou crypto" },
+    description: { en: "Personalized investment strategy setup.", fr: "Mise en place d'une stratégie d'investissement personnalisée." },
+    keywords: [
+      // EN
+      "stock", "crypto", "investment", "strategy", "analysis", "portfolio", "share", "trading", "performance", "advice", "planning", "risk", "personalized",
+      // FR
+      "bourse", "crypto", "investissement", "stratégie", "analyse", "portefeuille", "action", "trading", "performance", "conseil", "planification", "risque", "personnalisé"
+    ]
+  },
+  {
+    id: 42,
+    icon: "💳",
+    title: { en: "Investment Assistance", fr: "Réalisation d'investissements" },
+    description: { en: "Support for your financial investments.", fr: "Accompagnement dans vos placements financiers." },
+    keywords: [
+      // EN
+      "investment", "placement", "finance", "stock", "advice", "strategy", "analysis", "return", "portfolio", "management", "buy", "sell", "support",
+      // FR
+      "investissement", "placement", "finances", "bourse", "conseil", "stratégie", "analyse", "rendement", "portefeuille", "gestion", "achat", "vente", "accompagnement"
+    ]
+  },
+  {
+    id: 43,
+    icon: "🏦",
+    title: { en: "Online Banking Assistance", fr: "Passage à une banque en ligne" },
+    description: { en: "Advice and help opening an online bank account.", fr: "Conseil et assistance pour ouvrir un compte bancaire en ligne." },
+    keywords: [
+      // EN
+      "online bank", "account", "finance", "assistance", "opening", "security", "management", "transfer", "card", "payment", "support", "transaction",
+      // FR
+      "banque en ligne", "compte", "finance", "assistance", "ouverture", "sécurité", "gestion", "virement", "carte", "paiement", "support", "transaction"
+    ]
+  },
+  {
+    id: 44,
+    icon: "🚫",
+    title: { en: "Ad Blocking", fr: "Blocage de publicités" },
+    description: { en: "Removal and blocking of ads on PC and smartphone.", fr: "Suppression et blocage des publicités sur PC et smartphone." },
+    keywords: [
+      // EN
+      "advertising", "blocking", "ads", "removal", "filter", "browser", "protection", "security", "adblock", "chrome", "firefox", "mobile", "smartphone",
+      // FR
+      "publicité", "blocage", "ads", "suppression", "filtre", "navigateur", "protection", "sécurité", "adblock", "chrome", "firefox", "mobile", "smartphone"
+    ]
+  },
+  {
+    id: 45,
+    icon: "🌐",
+    title: { en: "Internet Provider Choice", fr: "Choix d'opérateur internet" },
+    description: { en: "Help choosing the best provider for your area.", fr: "Aide au choix du meilleur fournisseur selon votre région." },
+    keywords: [
+      // EN
+      "internet", "provider", "operator", "connection", "box", "wifi", "choose", "selection", "subscription", "installation", "network", "payment", "bill", "service", "offer", "compare",
+      // FR
+      "internet", "opérateur", "fournisseur", "connexion", "box", "wifi", "choisir", "sélection", "abonnement", "installation", "réseau", "paiement", "facture", "service", "offre", "comparer"
+    ]
+  },
+  {
+    id: 46,
+    icon: "🔎",
+    title: { en: "Product Price Research", fr: "Recherche du produit le moins cher" },
+    description: { en: "Comparison and search for the best deals.", fr: "Comparaison et recherche des meilleures offres disponibles." },
+    keywords: [
+      // EN
+      "product", "price", "comparison", "purchase", "save", "find", "search", "best", "offer", "deal", "promo", "discount", "order", "payment", "cart", "selection", "choose",
+      // FR
+      "produit", "prix", "comparaison", "achat", "économiser", "trouver", "recherche", "meilleur", "offre", "deal", "promo", "réduction", "commander", "paiement", "panier", "sélection", "choisir"
+    ]
+  },
+  {
+    id: 47,
+    icon: "📺",
+    title: { en: "YouTube Channel Creation", fr: "Création de chaîne YouTube" },
+    description: { en: "Setup and optimization of your YouTube channel.", fr: "Mise en place et optimisation de votre chaîne YouTube." },
+    keywords: [
+      // EN
+      "youtube", "channel", "video", "creation", "optimization", "subscriber", "content", "monetization", "settings", "design", "banner", "profile", "publish",
+      // FR
+      "youtube", "chaîne", "vidéo", "création", "optimisation", "abonné", "contenu", "monétisation", "paramétrage", "design", "bannière", "profil", "publier"
+    ]
+  },
+  {
+    id: 48,
+    icon: "🎮",
+    title: { en: "Twitch Channel Creation", fr: "Création de chaîne Twitch" },
+    description: { en: "Configuration and advice for your Twitch channel.", fr: "Configuration et conseils pour votre chaîne Twitch." },
+    keywords: [
+      // EN
+      "twitch", "streaming", "video game", "channel", "live", "subscriber", "settings", "design", "banner", "profile", "animation", "chat",
+      // FR
+      "twitch", "streaming", "jeu vidéo", "chaîne", "live", "abonné", "paramétrage", "design", "bannière", "profil", "animation", "chat"
+    ]
+  },
+  {
+    id: 49,
+    icon: "🎥",
+    title: { en: "Kick Channel Creation", fr: "Création de chaîne Kick" },
+    description: { en: "Launch and configuration of a channel on Kick.", fr: "Lancement et configuration de chaîne sur Kick." },
+    keywords: [
+      // EN
+      "kick", "streaming", "video", "channel", "live", "subscriber", "settings", "design", "banner", "profile", "animation",
+      // FR
+      "kick", "streaming", "vidéo", "chaîne", "live", "abonné", "paramétrage", "design", "bannière", "profil", "animation"
+    ]
+  },
+  {
+    id: 50,
+    icon: "🎵",
+    title: { en: "TikTok Account Creation", fr: "Création de compte TikTok" },
+    description: { en: "Setup and optimization of TikTok profile.", fr: "Mise en place et optimisation de profil TikTok." },
+    keywords: [
+      // EN
+      "tiktok", "video", "profile", "social network", "subscriber", "creation", "animation", "publication", "auto post", "automatic", "challenge", "trend", "music",
+      // FR
+      "tiktok", "vidéo", "profil", "réseau social", "abonné", "création", "animation", "publication", "publication automatique", "automatique", "challenge", "tendance", "musique"
+    ]
+  },
+  {
+  id: 51,
+  icon: "💻",
+  title: { en: "Laptop Purchase Advice", fr: "Conseil pour achat PC portable" },
+  description: { en: "Help choosing a laptop suited to your needs.", fr: "Aide à choisir un ordinateur portable adapté à vos besoins." },
+  keywords: [
+    // ENGLISH
+    "laptop", "notebook", "computer", "buy", "purchase", "advice", "consulting", "selection", "configuration", "performance", "brand", "budget", "setup", "installation", "support", "personalized", "portable", "windows", "mac", "custom",
+    // FRANÇAIS
+    "pc portable", "ordinateur", "achat", "conseil", "sélection", "configuration", "performance", "marque", "budget", "installation", "support", "personnalisé", "portable", "windows", "mac", "sur mesure"
+  ]
+},
+{
+  id: 52,
+  icon: "🖥️",
+  title: { en: "Desktop Purchase Advice", fr: "Conseil pour achat PC fixe" },
+  description: { en: "Selection and configuration of high-performance desktops.", fr: "Sélection et configuration de PC fixes performants." },
+  keywords: [
+    // ENGLISH
+    "desktop", "computer", "pc", "buy", "purchase", "advice", "consulting", "selection", "configuration", "performance", "brand", "budget", "setup", "installation", "support", "custom", "personalized", "fixed", "windows", "mac",
+    // FRANÇAIS
+    "pc fixe", "ordinateur", "achat", "conseil", "sélection", "configuration", "performance", "marque", "budget", "installation", "support", "personnalisé", "fixe", "windows", "mac", "sur mesure"
+  ]
+},
+{
+  id: 53,
+  icon: "🛡️",
+  title: { en: "Virus Removal", fr: "Détection et suppression de virus" },
+  description: { en: "Analysis and complete cleaning against viruses, malware and spyware.", fr: "Analyse et nettoyage complet contre virus, malwares et spywares." },
+  keywords: [
+    // ENGLISH
+    "virus", "malware", "spyware", "removal", "cleaning", "security", "antivirus", "protection", "analysis", "diagnosis", "support", "prevention", "infection", "scan", "threat", "computer", "pc", "mac", "trojan", "adware", "ransomware",
+    // FRANÇAIS
+    "virus", "malware", "spyware", "suppression", "nettoyage", "sécurité", "antivirus", "protection", "analyse", "diagnostic", "support", "prévention", "infection", "scan", "menace", "ordinateur", "pc", "mac", "cheval de troie", "adware", "ransomware"
+  ]
+},
+{
+  id: 54,
+  icon: "🖥️",
+  title: { en: "Showcase Website Creation", fr: "Création de site vitrine" },
+  description: { en: "Design of static websites to present your activity.", fr: "Conception de sites web statiques pour présenter votre activité." },
+  keywords: [
+    // ENGLISH
+    "showcase website", "static website", "web", "presentation", "design", "creation", "business", "company", "activity", "landing page", "optimization", "html", "css", "responsive", "portfolio", "brand", "custom", "personalized",
+    // FRANÇAIS
+    "site vitrine", "web", "présentation", "design", "création", "statique", "entreprise", "activité", "landing page", "optimisation", "html", "css", "responsive", "portfolio", "marque", "personnalisé", "sur mesure"
+  ]
+},
+{
+  id: 55,
+  icon: "🛒",
+  title: { en: "E-commerce Website Creation", fr: "Création de site e-commerce" },
+  description: { en: "Development of online stores with secure payment.", fr: "Développement de boutiques en ligne avec paiement sécurisé." },
+  keywords: [
+    // ENGLISH
+    "e-commerce", "online store", "shop", "payment", "sale", "website", "buy", "order", "transaction", "cart", "product", "secure", "stripe", "paypal", "catalog", "commerce", "sell", "checkout", "business", "custom", "personalized",
+    // FRANÇAIS
+    "e-commerce", "boutique en ligne", "paiement", "vente", "site web", "acheter", "commander", "transaction", "panier", "produit", "shop", "achat", "sécurisé", "stripe", "paypal", "catalogue", "commerce", "vendre", "checkout", "entreprise", "personnalisé", "sur mesure"
+  ]
+},
+{
+  id: 56,
+  icon: "📱",
+  title: { en: "Mobile App Creation", fr: "Création d'application mobile" },
+  description: { en: "Development of applications for Android and iOS.", fr: "Développement d'applications pour Android et iOS." },
+  keywords: [
+    // ENGLISH
+    "mobile app", "android", "ios", "development", "creation", "app", "smartphone", "tablet", "store", "installation", "interface", "responsive", "custom", "personalized", "application", "publish", "release", "update",
+    // FRANÇAIS
+    "application mobile", "android", "ios", "développement", "création", "app", "smartphone", "tablette", "publication", "store", "installation", "interface", "responsive", "personnalisé", "application", "mise à jour", "sur mesure"
+  ]
+},
+{
+  id: 57,
+  icon: "🗄️",
+  title: { en: "Database Creation", fr: "Création de base de données" },
+  description: { en: "Design and management of databases for your applications.", fr: "Conception et gestion de bases de données pour vos applications." },
+  keywords: [
+    // ENGLISH
+    "database", "sql", "management", "application", "creation", "storage", "optimization", "security", "relational", "table", "query", "data", "backup", "server", "custom", "personalized",
+    // FRANÇAIS
+    "base de données", "sql", "gestion", "application", "création", "stockage", "optimisation", "sécurité", "relationnel", "table", "requête", "données", "sauvegarde", "serveur", "personnalisé", "sur mesure"
+  ]
+},
+{
+  id: 58,
+  icon: "⚙️",
+  title: { en: "Discord - Creation & Configuration", fr: "Discord - Création & Configuration" },
+  description: { en: "Setup and full organization of a Discord server.", fr: "Mise en place et organisation complète d’un serveur Discord." },
+  keywords: [
+    // ENGLISH
+    "discord", "creation", "configuration", "server", "roles", "channels", "setup", "community", "permissions", "invite", "management", "installation", "custom", "personalized", "organization", "structure",
+    // FRANÇAIS
+    "discord", "création", "configuration", "serveur", "rôles", "salons", "setup", "communauté", "permissions", "invitation", "gestion", "installation", "personnalisé", "organisation", "structure", "sur mesure"
+  ]
+},
+{
+  id: 59,
+  icon: "🛡️",
+  title: { en: "Discord - Moderation & Security", fr: "Discord - Modération & Sécurité" },
+  description: { en: "Management, monitoring and securing the Discord server.", fr: "Gestion, surveillance et sécurisation du serveur Discord." },
+  keywords: [
+    // ENGLISH
+    "discord", "moderation", "security", "anti-spam", "rules", "ban", "kick", "report", "filter", "safe", "protection", "monitoring", "management", "admin", "community", "server", "custom",
+    // FRANÇAIS
+    "discord", "modération", "sécurité", "anti-spam", "règles", "bannissement", "ban", "kick", "signalement", "filtre", "protection", "surveillance", "gestion", "administration", "communauté", "serveur", "personnalisé"
+  ]
+},
+{
+  id: 60,
+  icon: "📢",
+  title: { en: "Discord - Animation & Engagement", fr: "Discord - Animation & Engagement" },
+  description: { en: "Event organization and activities to energize the community.", fr: "Organisation d’événements et activités pour dynamiser la communauté." },
+  keywords: [
+    // ENGLISH
+    "discord", "animation", "engagement", "event", "game", "activity", "contest", "quiz", "participation", "interaction", "community", "organization", "custom",
+    // FRANÇAIS
+    "discord", "animation", "engagement", "événement", "jeu", "activité", "concours", "quiz", "participation", "interaction", "communauté", "organisation", "personnalisé"
+  ]
+},
+{
+  id: 61,
+  icon: "🤖",
+  title: { en: "Discord - Bots & Automation", fr: "Discord - Bots & Automatisation" },
+  description: { en: "Bot installation and configuration for task automation.", fr: "Installation et configuration de bots pour automatiser les tâches." },
+  keywords: [
+    // ENGLISH
+    "discord", "bot", "bots", "automation", "commands", "reaction roles", "script", "integration", "setup", "role", "auto", "custom", "personalized", "server", "community",
+    // FRANÇAIS
+    "discord", "bot", "bots", "automatisation", "commandes", "reaction roles", "script", "intégration", "setup", "rôle", "auto", "personnalisé", "serveur", "communauté", "sur mesure"
+  ]
+},
+{
+  id: 62,
+  icon: "🎨",
+  title: { en: "Discord - Design & Branding", fr: "Discord - Design & Branding" },
+  description: { en: "Graphic customization and visual identity for the server.", fr: "Personnalisation graphique et identité visuelle du serveur." },
+  keywords: [
+    // ENGLISH
+    "discord", "design", "branding", "logo", "banner", "emojis", "custom", "identity", "graphic", "image", "avatar", "style", "visual", "customization", "personalization", "graphics", "visual identity", "server", "art", "illustration",
+    // FRANÇAIS
+    "discord", "design", "branding", "logo", "bannière", "emojis", "custom", "identité", "graphique", "image", "avatar", "style", "visuel", "personnalisation", "personnalisé", "graphisme", "identité visuelle", "serveur", "illustration", "art"
+  ]
+},
+{
+  id: 63,
+  icon: "📊",
+  title: { en: "Discord - Optimization & Analysis", fr: "Discord - Optimisation & Analyse" },
+  description: { en: "Audit and improvement of server performance and organization.", fr: "Audit et amélioration des performances et de l’organisation du serveur." },
+  keywords: [
+    // ENGLISH
+    "discord", "optimization", "analysis", "statistics", "audit", "structure", "performance", "report", "stats", "improvement", "organization", "review", "monitoring", "custom", "personalized", "server", "community",
+    // FRANÇAIS
+    "discord", "optimisation", "analyse", "statistiques", "audit", "structure", "performance", "rapport", "stats", "amélioration", "organisation", "revue", "surveillance", "personnalisé", "serveur", "communauté", "sur mesure"
+  ]
+},
+
+]
+
+        // Définir la langue par défaut
+        const currentLanguage = 'fr';
+
+        function displayAllServices() {
+            const container = document.getElementById('servicesContainer');
+            container.innerHTML = '';
+            
+            services.forEach(service => {
+                const serviceCard = document.createElement('div');
+                serviceCard.className = 'service-card';
+                serviceCard.innerHTML = `
+                    <div class="service-icon">${service.icon}</div>
+                    <h3>${service.title['fr']}</h3>
+                    <p>${service.description['fr']}</p>
+                   <a class="service-btn" 
+   href="contact.html?service=${encodeURIComponent(service.title['fr'])}" 
+   data-en="More info & contact" data-fr="Plus d’infos & contact">
+   ${currentLanguage === 'en' ? 'More info & contact' : 'Plus d’infos & contact'}
+</a>
+                `;
+                container.appendChild(serviceCard);
+            });
+        }
+
+        function searchServices() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const container = document.getElementById('servicesContainer');
+            
+            if (!query) {
+                displayAllServices();
+                return;
+            }
+            
+            const filteredServices = services.filter(service => {
+                if (!service.keywords) return false;
+                return service.keywords.some(keyword => keyword.toLowerCase().includes(query)) ||
+                       service.title['fr'].toLowerCase().includes(query) ||
+                       service.description['fr'].toLowerCase().includes(query);
+            });
+            
+            container.innerHTML = '';
+            
+            if (filteredServices.length === 0) {
+                container.innerHTML = `<p style="text-align: center; color: #9ca3af; grid-column: 1 / -1;">Aucun service trouvé pour votre recherche.</p>`;
+                return;
+            }
+            
+            filteredServices.forEach(service => {
+                const serviceCard = document.createElement('div');
+                serviceCard.className = 'service-card';
+                serviceCard.innerHTML = `
+                    <div class="service-icon">${service.icon}</div>
+                    <h3>${service.title['fr']}</h3>
+                    <p>${service.description['fr']}</p>
+                    <a class="service-btn" 
+   href="contact.html?service=${encodeURIComponent(service.title['fr'])}" 
+   data-en="More info & contact" data-fr="Plus d’infos & contact">
+   ${currentLanguage === 'en' ? 'More info & contact' : 'Plus d’infos & contact'}
+</a>
+                `;
+                container.appendChild(serviceCard);
+            });
+        }
+          
+        function searchFromIdea(idea) {
+              document.getElementById('searchInput').value = idea;
+              searchServices();
+          }
+
+
+
+        function initSpiderWeb() {
+            const canvas = document.getElementById('spiderWeb');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            const nodes = [];
+            const mouse = { x: 0, y: 0 };
+            
+            // Create nodes
+            for (let i = 0; i < 50; i++) {
+                nodes.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5
+                });
+            }
+            
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Update nodes
+                nodes.forEach(node => {
+                    node.x += node.vx;
+                    node.y += node.vy;
+                    
+                    if (node.x < 0 || node.x > canvas.width) node.vx *= -1;
+                    if (node.y < 0 || node.y > canvas.height) node.vy *= -1;
+                    
+                    // Mouse interaction
+                    const dx = mouse.x - node.x;
+                    const dy = mouse.y - node.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 100) {
+                        node.x += dx * 0.01;
+                        node.y += dy * 0.01;
+                    }
+                });
+                
+                // Draw connections
+                ctx.strokeStyle = 'rgba(96, 165, 250, 0.1)';
+                ctx.lineWidth = 1;
+                
+                for (let i = 0; i < nodes.length; i++) {
+                    for (let j = i + 1; j < nodes.length; j++) {
+                        const dx = nodes[i].x - nodes[j].x;
+                        const dy = nodes[i].y - nodes[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (distance < 150) {
+                            ctx.beginPath();
+                            ctx.moveTo(nodes[i].x, nodes[i].y);
+                            ctx.lineTo(nodes[j].x, nodes[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                
+                // Draw nodes
+                ctx.fillStyle = 'rgba(96, 165, 250, 0.3)';
+                nodes.forEach(node => {
+                    ctx.beginPath();
+                    ctx.arc(node.x, node.y, 2, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+                
+                requestAnimationFrame(animate);
+            }
+            
+            // Mouse tracking
+            document.addEventListener('mousemove', (e) => {
+                mouse.x = e.clientX;
+                mouse.y = e.clientY;
+            });
+            
+            // Touch tracking for mobile
+            document.addEventListener('touchmove', (e) => {
+                if (e.touches[0]) {
+                    mouse.x = e.touches[0].clientX;
+                    mouse.y = e.touches[0].clientY;
+                }
+            });
+            
+            // Resize handling
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+            
+            animate();
+        }
+
+        // Sticky navigation
+        window.addEventListener('scroll', () => {
+            const stickyNav = document.getElementById('stickyNav');
+            const scrollToTop = document.getElementById('scrollToTop');
+            
+            if (window.scrollY > 100) {
+                stickyNav.classList.add('visible');
+                scrollToTop.classList.add('visible');
+            } else {
+                stickyNav.classList.remove('visible');
+                scrollToTop.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+    </script>
+
+
+
+<div id="bookingModal" class="modal" style="display:none;">
+  <div class="modal-content" style="max-width:400px;margin:auto;padding:2rem;background:#181818;border-radius:15px;">
+    <span class="close" onclick="closeBookingModal()" style="float:right;cursor:pointer;font-size:2rem;">&times;</span>
+    <h2 id="bookingTitle" style="color:#60a5fa;text-align:center;">Réservation consultation gratuite</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label id="labelName" style="color:#fff;">Prénom Ou Entité</label>
+        <input type="text" id="bookingName" required class="form-input" style="width:100%;margin-bottom:1rem;" placeholder="...">
+      </div>
+      <div class="form-group">
+        <label id="labelContact" style="color:#fff;">Contact (Email ou téléphone)</label>
+        <input type="text" id="bookingContact" required class="form-input" style="width:100%;margin-bottom:1rem;" placeholder="Email ou téléphone">
+      </div>
+<div class="form-group">
+  <label id="labelDate" style="color:#fff;">Date</label>
+  <input type="date" id="bookingDate" required class="form-input" style="width:100%;margin-bottom:1rem;">
+</div>
+      <div class="form-group">
+        <label id="labelHour" style="color:#fff;">Heure</label>
+        <select id="bookingHour" required class="form-input" style="width:100%;margin-bottom:1rem;">
+          <option value="">-- Sélectionnez un créneau --</option>
+          <option value="09:00">09h00 - 10h00</option>
+          <option value="10:00">10h00 - 11h00</option>
+          <option value="11:00">11h00 - 12h00</option>
+          <option value="13:00">13h00 - 14h00</option>
+          <option value="14:00">14h00 - 15h00</option>
+          <option value="15:00">15h00 - 16h00</option>
+          <option value="16:00">16h00 - 17h00</option>
+        </select>
+      </div>
+  <button type="submit" id="bookingBtn" class="form-button"
+    style="width:100%;background:linear-gradient(135deg,#60a5fa,#34d399);color:#fff;padding:1rem;border:none;border-radius:10px;font-weight:600;">Réserver</button>
+</form>
+<div id="bookingCountdown" style="display:none;text-align:center;font-size:1.3rem;color:#60a5fa;margin-bottom:1rem;font-weight:600;"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+  const bookingURL = "https://script.google.com/macros/s/AKfycbyA5wgPB8zTRVJF5xOwmpp6qhRUrZJtUqCLxtP-Wptkt559689LAVyBjYq5Mui85-5C/exec";
+
+    function openBookingModal() {
+      document.getElementById("bookingModal").style.display = "block";
+    }
+    function closeBookingModal() {
+      document.getElementById("bookingModal").style.display = "none";
+    }
+
+// Fonction corrigée pour afficher les services en français uniquement
+function displayAllServices() {
+    const container = document.getElementById('servicesContainer');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    services.forEach(service => {
+        const serviceCard = document.createElement('div');
+        serviceCard.className = 'service-card';
+        serviceCard.innerHTML = `
+            <div class="service-icon">${service.icon}</div>
+            <h3>${service.title['fr']}</h3>
+            <p>${service.description['fr']}</p>
+            <a class="service-btn" href="contact.html?service=${encodeURIComponent(service.title['fr'])}">
+                Plus d'infos & contact
+            </a>
+        `;
+        container.appendChild(serviceCard);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Initialisation de l'animation spider web et affichage des services
+  initSpiderWeb();
+  displayAllServices();
+
+  // Formulaire booking : soumission vers Google Sheets avec décompte
+  const bookingForm = document.getElementById("bookingForm");
+  if (bookingForm) {
+bookingForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const name = document.getElementById("bookingName").value.trim();
+  const contact = document.getElementById("bookingContact").value.trim();
+  const date = document.getElementById("bookingDate").value;
+  const hour = document.getElementById("bookingHour").value;
+
+  // Vérifie que la date est un jour de semaine (lundi à vendredi)
+  const day = new Date(date).getDay();
+  if (day === 0 || day === 6) {
+    alert("⛔ Réservation possible uniquement du lundi au vendredi.");
+    return;
+  }
+
+  if (!name || !contact || !date || !hour) {
+    alert("⛔ Tous les champs sont obligatoires.");
+    return;
+  }
+
+  // Décompte avant affichage du message
+  const countdownDiv = document.getElementById("bookingCountdown");
+  const bookingTitle = document.getElementById("bookingTitle");
+  let seconds = 3;
+  countdownDiv.style.display = "block";
+  bookingForm.style.display = "none";
+  bookingTitle.style.display = "none"; // Masque le titre
+
+  countdownDiv.innerHTML = `Envoi de la réservation...<br>Fermeture dans <span id="countdownNum">${seconds}</span> seconde(s)...`;
+
+  // Envoie la réservation pendant le décompte
+  fetch(bookingURL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "text/plain" },
+    body: JSON.stringify({ name, contact, date, hour })
+  }).catch(err => {
+    console.error(err);
+  });
+
+  const interval = setInterval(() => {
+    seconds--;
+    document.getElementById("countdownNum").textContent = seconds;
+    if (seconds === 0) {
+      clearInterval(interval);
+      countdownDiv.innerHTML = "✅ Réservation envoyée !";
+      setTimeout(() => {
+        countdownDiv.style.display = "none";
+        bookingForm.reset();
+        bookingForm.style.display = "block";
+        bookingTitle.style.display = "block"; // Réaffiche le titre
+        closeBookingModal();
+      }, 1200);
+    }
+  }, 1000);
+});
+  }
+
+  // Icône calendrier cliquable pour ouvrir le sélecteur de date
+  const dateInput = document.getElementById('bookingDate');
+  const calendarIcon = document.getElementById('calendarIcon');
+  if (calendarIcon && dateInput) {
+    calendarIcon.addEventListener('click', (e) => {
+      e.preventDefault();
+      dateInput.focus();
+      setTimeout(() => { dateInput.click(); }, 10);
+    });
+  }
+});
+    
+  
+
+
+
+
+
+
+document.getElementById('scrollToServicesBtn').addEventListener('click', function() {
+  const servicesSection = document.getElementById('servicesContainer');
+  if (servicesSection) {
+    const y = servicesSection.getBoundingClientRect().top + window.scrollY - 80; // 80px = hauteur de la nav
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+});
+
+
+
+</script>
+
+
+
+</body>
+</html>

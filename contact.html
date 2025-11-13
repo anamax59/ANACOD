@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ANACOD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: transparent !important;
+            color: #ffffff;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        
+        .container {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-family: 'Square Game', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #14196a 0%, #60a5fa 55%, #e5eaf5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            letter-spacing: -0.02em;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 2rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        html {
+            background: #0a0a0a !important;
+        }
+
+
+        .nav-link {
+            color: #9ca3af;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #60a5fa;
+        }
+
+
+
+        .contact-section {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 3rem;
+        }
+
+        .contact-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .contact-subtitle {
+            text-align: center;
+            color: #9ca3af;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        .highlight-green {
+            color: #34d399 !important;
+            font-weight: 600;
+            border-color: #34d399 !important;
+            background: rgba(52, 211, 153, 0.07) !important;
+        }
+
+
+            @font-face {
+                font-family: 'Square Game';
+                src: url('fonts/Square-Game.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+
+        @media (min-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            .title {
+                font-size: 10rem;
+            }
+            .contact-title {
+                font-size: 3rem;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            html {
+                background: #0a0a0a !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            body {
+                background: transparent !important;
+                width: 100vw !important;
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            .container {
+                max-width: 100vw !important;
+                padding: 0 0.5rem !important;
+                margin: 0 !important;
+                box-sizing: border-box !important;
+            }
+            .logo, .title {
+                font-size: 3rem !important;
+                word-break: break-word;
+            }
+        }
+
+
+        .contact-form {
+            background: rgba(15, 15, 15, 0.8);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #60a5fa;
+            font-weight: 500;
+        }
+
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: rgba(15, 15, 15, 0.6);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus, .form-textarea:focus {
+            border-color: #60a5fa;
+            box-shadow: 0 0 10px rgba(96, 165, 250, 0.2);
+        }
+
+        .form-textarea {
+                font-family: 'Inter', system-ui, -apple-system, sans-serif;
+                font-size: 1rem;
+                resize: vertical;
+                min-height: 120px;
+        }
+
+        .form-button {
+            background: linear-gradient(135deg, #60a5fa, #34d399);
+            border: none;
+            color: #000;
+            padding: 0.75rem 2rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .form-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(96, 165, 250, 0.3);
+        }
+
+        .contact-info {
+            background: rgba(15, 15, 15, 0.8);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .info-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: #9ca3af;
+        }
+
+        .info-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 1rem;
+            color: #34d399;
+        }
+
+        .footer {
+            background: rgba(15, 15, 15, 0.9);
+            border-top: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #60a5fa;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-copyright {
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+
+        #spiderWeb {
+            position: fixed !important;
+            top: 0; left: 0;
+            width: 100vw !important;
+            height: 100vh !important;
+            z-index: -1 !important;
+            pointer-events: none !important;
+            background: transparent !important;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="spiderWeb"></canvas>
+    
+
+    
+    <div class="container">
+        <h1 class="title">ANACOD</h1>
+        <p class="subtitle">Décodons votre succès</p>
+        
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+            <a href="about.html" class="nav-link">Qui suis-je</a>
+        </nav>
+
+        <div class="contact-section">
+            <h2 class="contact-title">Contactez-nous</h2>
+            <p class="contact-subtitle">Prêt à démarrer votre projet digital ? Discutons de vos besoins et trouvons la solution parfaite.</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Nom complet</label>
+                            <input type="text" class="form-input" name="name" required placeholder="Votre nom complet">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Adresse email</label>
+                            <input type="email" class="form-input" name="email" required placeholder="votre.email@exemple.fr">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Numéro de téléphone</label>
+                            <input type="tel" class="form-input" name="phone" placeholder="Votre numéro de téléphone">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Type de projet</label>
+                            <input type="text" class="form-input" name="projectType" placeholder="Type de service ou projet">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Description du projet</label>
+                            <textarea class="form-textarea" name="message" required placeholder="Parlez-moi de votre projet..."></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Envoyer le message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3 class="info-title">Informations de contact</h3>
+                    
+                    <div class="info-item">
+                        <svg class="info-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        <span>contact@anacod.fr</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <svg class="info-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>France</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <svg class="info-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Lundi - Vendredi : 9h00 - 18h00</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <svg class="info-icon" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Consultation gratuite de 30 minutes disponible</span>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(59, 130, 246, 0.2);">
+                        <h4 style="color: #60a5fa; margin-bottom: 1rem;" data-en="Response Time" data-fr="Temps de réponse">Response Time</h4>
+                        <p style="color: #9ca3af; font-size: 0.9rem;" data-en="I typically respond within 24 hours during business days. For urgent matters, please mention it in your message." data-fr="Je réponds généralement dans les 24 heures pendant les jours ouvrables. Pour les questions urgentes, veuillez le mentionner dans votre message.">I typically respond within 24 hours during business days. For urgent matters, please mention it in your message.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">ANATOUCH</h3>
+            <p class="footer-copyright">© 2024 ANACOD. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        function initSpiderWeb() {
+            const canvas = document.getElementById('spiderWeb');
+            const ctx = canvas.getContext('2d');
+            
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+            
+            const nodes = [];
+            const nodeCount = 50;
+            
+            for (let i = 0; i < nodeCount; i++) {
+                nodes.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5,
+                    vy: (Math.random() - 0.5) * 0.5
+                });
+            }
+            
+            let mouseX = 0;
+            let mouseY = 0;
+            
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+            
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                // Update nodes
+                nodes.forEach(node => {
+                    node.x += node.vx;
+                    node.y += node.vy;
+                    
+                    if (node.x < 0 || node.x > canvas.width) node.vx *= -1;
+                    if (node.y < 0 || node.y > canvas.height) node.vy *= -1;
+                    
+                    // Mouse interaction
+                    const dx = mouseX - node.x;
+                    const dy = mouseY - node.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 100) {
+                        node.x += dx * 0.01;
+                        node.y += dy * 0.01;
+                    }
+                });
+                
+                // Draw connections
+                ctx.strokeStyle = 'rgba(96, 165, 250, 0.1)';
+                ctx.lineWidth = 1;
+                
+                for (let i = 0; i < nodes.length; i++) {
+                    for (let j = i + 1; j < nodes.length; j++) {
+                        const dx = nodes[i].x - nodes[j].x;
+                        const dy = nodes[i].y - nodes[j].y;
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (distance < 150) {
+                            ctx.beginPath();
+                            ctx.moveTo(nodes[i].x, nodes[i].y);
+                            ctx.lineTo(nodes[j].x, nodes[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                
+                // Draw nodes
+                ctx.fillStyle = 'rgba(96, 165, 250, 0.3)';
+                nodes.forEach(node => {
+                    ctx.beginPath();
+                    ctx.arc(node.x, node.y, 2, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+                
+                requestAnimationFrame(animate);
+            }
+            
+            animate();
+        }
+
+
+            // Pré-remplir le champ "Type of service or project" si paramètre présent
+            const params = new URLSearchParams(window.location.search);
+            const service = params.get('service');
+            if (service) {
+                const projectTypeInput = document.querySelector('input[name="projectType"]');
+                if (projectTypeInput) {
+                    projectTypeInput.value = decodeURIComponent(service);
+                    projectTypeInput.classList.add('highlight-green');
+                }
+            }
+
+
+        
+    </script>
+
+    <!-- À placer avant </body> sur chaque page -->
+<button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+    ↑
+</button>
+<script>
+    window.addEventListener('scroll', () => {
+        const scrollToTop = document.getElementById('scrollToTop');
+        if (window.scrollY > 100) {
+            scrollToTop.classList.add('visible');
+        } else {
+            scrollToTop.classList.remove('visible');
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }     
+</script>
+    <style>
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(96, 165, 250, 0.8);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+        }
+    </style>  
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+
+    // Affiche le timer
+    let seconds = 3;
+    let countdownDiv = document.getElementById('contactCountdown');
+    if (!countdownDiv) {
+        countdownDiv = document.createElement('div');
+        countdownDiv.id = 'contactCountdown';
+        countdownDiv.style = 'display:block;text-align:center;font-size:1.3rem;color:#60a5fa;margin-bottom:1rem;font-weight:600;';
+        form.parentNode.insertBefore(countdownDiv, form);
+    }
+    countdownDiv.innerHTML = `Sending...<br>Closing in <span id="contactCountdownNum">${seconds}</span> seconds...`;
+    form.style.display = "none";
+
+    // Envoie à Google Sheets pendant le timer
+    fetch('https://script.google.com/macros/s/AKfycbz7SXZcla4SgUgRWK-KVg9rnf1s4BhvwRbMD6pHc7UvrFMEZ2l1B2xEMBRZCnbuHB_xDw/exec', {
+        method: 'POST',
+        body: formData
+    }).catch(() => {});
+
+    const interval = setInterval(() => {
+        seconds--;
+        document.getElementById("contactCountdownNum").textContent = seconds;
+        if (seconds === 0) {
+            clearInterval(interval);
+            countdownDiv.innerHTML = "✅ Message sent!";
+            setTimeout(() => {
+                countdownDiv.style.display = "none";
+                form.reset();
+                form.style.display = "block";
+            }, 1200);
+        }
+    }, 1000);
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    initSpiderWeb();
+});
+</script>
+
+
+</body>
+</html>
+

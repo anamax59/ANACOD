@@ -1,0 +1,274 @@
+Nov 13 12:19:33 10.71.56.0 a616034 Connection from 10.71.56.0 port 20340 on 82.165.90.135 port 22 rdomain ""
+Nov 13 12:19:34 10.71.56.0 a616034 Accepted password for a616034 from 10.71.56.0 port 20340 ssh2
+Nov 13 12:19:34 10.71.56.0 a616034 Starting session: subsystem 'sftp' for a616034 from 10.71.56.0 port 20340 id 0
+Nov 13 12:19:34 10.71.56.0 a616034 session opened for local user a616034 from [10.71.56.0]
+Nov 13 12:24:34 10.71.56.0 a616034 session closed for local user a616034 from [10.71.56.0]
+Nov 13 12:24:34 10.71.56.0 a616034 Connection closed by 10.71.56.0 port 20340
+Nov 13 12:30:07 10.71.56.0 a265430 Connection from 10.71.56.0 port 54810 on 82.165.90.135 port 22 rdomain ""
+Nov 13 12:30:09 10.71.56.0 a265430 Failed password for a265430 from 10.71.56.0 port 54810 ssh2
+Nov 13 12:30:15 10.71.56.0 a265430 Connection from 10.71.56.0 port 64052 on 82.165.90.135 port 22 rdomain ""
+Nov 13 12:30:16 10.71.56.0 a265430 Accepted password for a265430 from 10.71.56.0 port 64052 ssh2
+Nov 13 12:30:16 10.71.56.0 a265430 Starting session: subsystem 'sftp' for a265430 from 10.71.56.0 port 64052 id 0
+Nov 13 12:30:16 10.71.56.0 a265430 session opened for local user a265430 from [10.71.56.0]
+Nov 13 12:31:28 10.71.56.0 a265430 Connection from 10.71.56.0 port 44758 on 82.165.90.135 port 22 rdomain ""
+Nov 13 12:31:28 10.71.56.0 a265430 Accepted password for a265430 from 10.71.56.0 port 44758 ssh2
+Nov 13 12:31:28 10.71.56.0 a265430 Connection from 10.71.56.0 port 64572 on 82.165.90.135 port 22 rdomain ""
+Nov 13 12:31:28 10.71.56.0 a265430 Accepted password for a265430 from 10.71.56.0 port 64572 ssh2
+Nov 13 12:31:29 10.71.56.0 a265430 Starting session: subsystem 'sftp' for a265430 from 10.71.56.0 port 44758 id 0
+Nov 13 12:31:29 10.71.56.0 a265430 session opened for local user a265430 from [10.71.56.0]
+Nov 13 12:31:29 10.71.56.0 a265430 Starting session: subsystem 'sftp' for a265430 from 10.71.56.0 port 64572 id 0
+Nov 13 12:31:29 10.71.56.0 a265430 session opened for local user a265430 from [10.71.56.0]
+Nov 13 12:31:29 10.71.56.0 a265430 open "/about.html" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 open "/.gitignore" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 close "/about.html" bytes read 29733 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|29733|0|0|0|2f61626f75742e68746d6c|]
+Nov 13 12:31:29 10.71.56.0 a265430 close "/.gitignore" bytes read 313 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|313|0|0|0|2f2e67697469676e6f7265|]
+Nov 13 12:31:29 10.71.56.0 a265430 open "/components.json" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 open "/contact.html" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 close "/components.json" bytes read 426 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|426|0|0|0|2f636f6d706f6e656e74732e6a736f6e|]
+Nov 13 12:31:29 10.71.56.0 a265430 close "/contact.html" bytes read 22913 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|22913|0|0|0|2f636f6e746163742e68746d6c|]
+Nov 13 12:31:29 10.71.56.0 a265430 open "/index.html" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 open "/IONOS-DEPLOYMENT.md" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 close "/index.html" bytes read 91403 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|91403|0|0|0|2f696e6465782e68746d6c|]
+Nov 13 12:31:29 10.71.56.0 a265430 close "/IONOS-DEPLOYMENT.md" bytes read 1815 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|1815|0|0|0|2f494f4e4f532d4445504c4f594d454e542e6d64|]
+Nov 13 12:31:29 10.71.56.0 a265430 open "/next.config.mjs" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 open "/package.json" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 close "/next.config.mjs" bytes read 228 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|228|0|0|0|2f6e6578742e636f6e6669672e6d6a73|]
+Nov 13 12:31:29 10.71.56.0 a265430 close "/package.json" bytes read 2253 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|2253|0|0|0|2f7061636b6167652e6a736f6e|]
+Nov 13 12:31:29 10.71.56.0 a265430 sent status No such file
+Nov 13 12:31:29 10.71.56.0 a265430 open "/pnpm-lock.yaml" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 open "/postcss.config.mjs" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 close "/pnpm-lock.yaml" bytes read 92 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|92|0|0|0|2f706e706d2d6c6f636b2e79616d6c|]
+Nov 13 12:31:29 10.71.56.0 a265430 close "/postcss.config.mjs" bytes read 144 written 0
+Nov 13 12:31:29 10.71.56.0 a265430 [10.71.56.0|get|0|144|0|0|0|2f706f73746373732e636f6e6669672e6d6a73|]
+Nov 13 12:31:29 10.71.56.0 a265430 open "/tsconfig.json" flags READ mode 0666
+Nov 13 12:31:29 10.71.56.0 a265430 session closed for local user a265430 from [10.71.56.0]
+Nov 13 12:31:29 10.71.56.0 a265430 Connection closed by 10.71.56.0 port 64572
+Nov 13 12:31:30 10.71.56.0 a265430 close "/tsconfig.json" bytes read 595 written 0
+Nov 13 12:31:30 10.71.56.0 a265430 [10.71.56.0|get|1|595|0|0|0|2f7473636f6e6669672e6a736f6e|]
+Nov 13 12:31:30 10.71.56.0 a265430 session closed for local user a265430 from [10.71.56.0]
+Nov 13 12:31:30 10.71.56.0 a265430 Connection closed by 10.71.56.0 port 44758
+Nov 13 12:31:30 10.71.56.0 a265430 Connection from 10.71.56.0 port 64578 on 82.165.90.135 port 22 rdomain ""
+Nov 13 12:31:30 10.71.56.0 a265430 Accepted password for a265430 from 10.71.56.0 port 64578 ssh2
+Nov 13 12:31:30 10.71.56.0 a265430 Connection from 10.71.56.0 port 44764 on 82.165.90.135 port 22 rdomain ""
+Nov 13 12:31:30 10.71.56.0 a265430 Accepted password for a265430 from 10.71.56.0 port 44764 ssh2
+Nov 13 12:31:30 10.71.56.0 a265430 Starting session: subsystem 'sftp' for a265430 from 10.71.56.0 port 64578 id 0
+Nov 13 12:31:30 10.71.56.0 a265430 session opened for local user a265430 from [10.71.56.0]
+Nov 13 12:31:30 10.71.56.0 a265430 Starting session: subsystem 'sftp' for a265430 from 10.71.56.0 port 44764 id 0
+Nov 13 12:31:30 10.71.56.0 a265430 session opened for local user a265430 from [10.71.56.0]
+Nov 13 12:31:30 10.71.56.0 a265430 open "/app/page.tsx" flags READ mode 0666
+Nov 13 12:31:30 10.71.56.0 a265430 open "/app/layout.tsx" flags READ mode 0666
+Nov 13 12:31:30 10.71.56.0 a265430 close "/app/page.tsx" bytes read 9301 written 0
+Nov 13 12:31:30 10.71.56.0 a265430 [10.71.56.0|get|0|9301|0|0|0|2f6170702f706167652e747378|]
+Nov 13 12:31:30 10.71.56.0 a265430 close "/app/layout.tsx" bytes read 796 written 0
+Nov 13 12:31:30 10.71.56.0 a265430 [10.71.56.0|get|0|796|0|0|0|2f6170702f6c61796f75742e747378|]
+Nov 13 12:31:30 10.71.56.0 a265430 open "/app/loading.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 open "/app/globals.css" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 close "/app/loading.tsx" bytes read 52 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|1|52|0|0|0|2f6170702f6c6f6164696e672e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 close "/app/globals.css" bytes read 4259 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|4259|0|0|0|2f6170702f676c6f62616c732e637373|]
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/theme-provider.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/use-toast.ts" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/theme-provider.tsx" bytes read 292 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|292|0|0|0|2f636f6d706f6e656e74732f7468656d652d70726f76696465722e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/use-toast.ts" bytes read 3948 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|3948|0|0|0|2f636f6d706f6e656e74732f75692f7573652d746f6173742e7473|]
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/tooltip.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/tooltip.tsx" bytes read 1891 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|1891|0|0|0|2f636f6d706f6e656e74732f75692f746f6f6c7469702e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/use-mobile.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/toggle.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/use-mobile.tsx" bytes read 565 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|565|0|0|0|2f636f6d706f6e656e74732f75692f7573652d6d6f62696c652e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/toggle.tsx" bytes read 1570 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|1570|0|0|0|2f636f6d706f6e656e74732f75692f746f67676c652e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/toggle-group.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/toaster.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/toggle-group.tsx" bytes read 1925 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|1925|0|0|0|2f636f6d706f6e656e74732f75692f746f67676c652d67726f75702e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/toaster.tsx" bytes read 786 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|786|0|0|0|2f636f6d706f6e656e74732f75692f746f61737465722e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/toast.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/textarea.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/toast.tsx" bytes read 4859 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|4859|0|0|0|2f636f6d706f6e656e74732f75692f746f6173742e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/textarea.tsx" bytes read 759 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|759|0|0|0|2f636f6d706f6e656e74732f75692f74657874617265612e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/tabs.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/table.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/tabs.tsx" bytes read 1969 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|1969|0|0|0|2f636f6d706f6e656e74732f75692f746162732e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 close "/components/ui/table.tsx" bytes read 2448 written 0
+Nov 13 12:31:31 10.71.56.0 a265430 [10.71.56.0|get|0|2448|0|0|0|2f636f6d706f6e656e74732f75692f7461626c652e747378|]
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/switch.tsx" flags READ mode 0666
+Nov 13 12:31:31 10.71.56.0 a265430 open "/components/ui/sonner.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/switch.tsx" bytes read 1177 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|1|1177|0|0|0|2f636f6d706f6e656e74732f75692f7377697463682e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/sonner.tsx" bytes read 564 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|1|564|0|0|0|2f636f6d706f6e656e74732f75692f736f6e6e65722e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/slider.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/skeleton.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/slider.tsx" bytes read 2001 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|2001|0|0|0|2f636f6d706f6e656e74732f75692f736c696465722e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/skeleton.tsx" bytes read 276 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|276|0|0|0|2f636f6d706f6e656e74732f75692f736b656c65746f6e2e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/sidebar.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/sheet.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/sidebar.tsx" bytes read 21633 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|21633|0|0|0|2f636f6d706f6e656e74732f75692f736964656261722e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/sheet.tsx" bytes read 4090 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|4090|0|0|0|2f636f6d706f6e656e74732f75692f73686565742e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/separator.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/select.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/separator.tsx" bytes read 699 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|699|0|0|0|2f636f6d706f6e656e74732f75692f736570617261746f722e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/select.tsx" bytes read 6253 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|6253|0|0|0|2f636f6d706f6e656e74732f75692f73656c6563742e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/scroll-area.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/resizable.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/scroll-area.tsx" bytes read 1645 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|1645|0|0|0|2f636f6d706f6e656e74732f75692f7363726f6c6c2d617265612e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/resizable.tsx" bytes read 2028 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|2028|0|0|0|2f636f6d706f6e656e74732f75692f726573697a61626c652e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/radio-group.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/progress.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/radio-group.tsx" bytes read 1466 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|1466|0|0|0|2f636f6d706f6e656e74732f75692f726164696f2d67726f75702e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/progress.tsx" bytes read 740 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|740|0|0|0|2f636f6d706f6e656e74732f75692f70726f67726573732e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/popover.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/pagination.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/popover.tsx" bytes read 1635 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|1635|0|0|0|2f636f6d706f6e656e74732f75692f706f706f7665722e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/pagination.tsx" bytes read 2712 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|2712|0|0|0|2f636f6d706f6e656e74732f75692f706167696e6174696f6e2e747378|]
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/navigation-menu.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 open "/components/ui/menubar.tsx" flags READ mode 0666
+Nov 13 12:31:32 10.71.56.0 a265430 close "/components/ui/navigation-menu.tsx" bytes read 6664 written 0
+Nov 13 12:31:32 10.71.56.0 a265430 [10.71.56.0|get|0|6664|0|0|0|2f636f6d706f6e656e74732f75692f6e617669676174696f6e2d6d656e752e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/menubar.tsx" bytes read 8394 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|1|8394|0|0|0|2f636f6d706f6e656e74732f75692f6d656e756261722e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/label.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/label.tsx" bytes read 611 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|611|0|0|0|2f636f6d706f6e656e74732f75692f6c6162656c2e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/input.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/input-otp.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/input.tsx" bytes read 967 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|967|0|0|0|2f636f6d706f6e656e74732f75692f696e7075742e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/input-otp.tsx" bytes read 2254 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|2254|0|0|0|2f636f6d706f6e656e74732f75692f696e7075742d6f74702e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/hover-card.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/form.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/hover-card.tsx" bytes read 1532 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|1532|0|0|0|2f636f6d706f6e656e74732f75692f686f7665722d636172642e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/form.tsx" bytes read 3759 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|3759|0|0|0|2f636f6d706f6e656e74732f75692f666f726d2e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/dropdown-menu.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/drawer.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/dropdown-menu.tsx" bytes read 8284 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|8284|0|0|0|2f636f6d706f6e656e74732f75692f64726f70646f776e2d6d656e752e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/drawer.tsx" bytes read 4255 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|4255|0|0|0|2f636f6d706f6e656e74732f75692f6472617765722e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/dialog.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/context-menu.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/dialog.tsx" bytes read 3982 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|3982|0|0|0|2f636f6d706f6e656e74732f75692f6469616c6f672e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/context-menu.tsx" bytes read 8222 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|8222|0|0|0|2f636f6d706f6e656e74732f75692f636f6e746578742d6d656e752e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/command.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/collapsible.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/command.tsx" bytes read 4818 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|4818|0|0|0|2f636f6d706f6e656e74732f75692f636f6d6d616e642e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/collapsible.tsx" bytes read 800 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|800|0|0|0|2f636f6d706f6e656e74732f75692f636f6c6c61707369626c652e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/checkbox.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/chart.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/checkbox.tsx" bytes read 1226 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|1226|0|0|0|2f636f6d706f6e656e74732f75692f636865636b626f782e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/chart.tsx" bytes read 9781 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|9781|0|0|0|2f636f6d706f6e656e74732f75692f63686172742e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/card.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 open "/components/ui/carousel.tsx" flags READ mode 0666
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/card.tsx" bytes read 1989 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|1989|0|0|0|2f636f6d706f6e656e74732f75692f636172642e747378|]
+Nov 13 12:31:33 10.71.56.0 a265430 close "/components/ui/carousel.tsx" bytes read 5556 written 0
+Nov 13 12:31:33 10.71.56.0 a265430 [10.71.56.0|get|0|5556|0|0|0|2f636f6d706f6e656e74732f75692f6361726f7573656c2e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/calendar.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/button.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/calendar.tsx" bytes read 7660 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|7660|0|0|0|2f636f6d706f6e656e74732f75692f63616c656e6461722e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/button.tsx" bytes read 2123 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|2123|0|0|0|2f636f6d706f6e656e74732f75692f627574746f6e2e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/breadcrumb.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/badge.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/breadcrumb.tsx" bytes read 2357 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|2357|0|0|0|2f636f6d706f6e656e74732f75692f62726561646372756d622e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/badge.tsx" bytes read 1631 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|1631|0|0|0|2f636f6d706f6e656e74732f75692f62616467652e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/avatar.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/aspect-ratio.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/avatar.tsx" bytes read 1097 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|1097|0|0|0|2f636f6d706f6e656e74732f75692f6176617461722e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/aspect-ratio.tsx" bytes read 280 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|280|0|0|0|2f636f6d706f6e656e74732f75692f6173706563742d726174696f2e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/alert.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/alert-dialog.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/alert.tsx" bytes read 1614 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|1614|0|0|0|2f636f6d706f6e656e74732f75692f616c6572742e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/alert-dialog.tsx" bytes read 3864 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|3864|0|0|0|2f636f6d706f6e656e74732f75692f616c6572742d6469616c6f672e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 open "/components/ui/accordion.tsx" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 close "/components/ui/accordion.tsx" bytes read 2053 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|2053|0|0|0|2f636f6d706f6e656e74732f75692f6163636f7264696f6e2e747378|]
+Nov 13 12:31:34 10.71.56.0 a265430 open "/data/services.ts" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 open "/data/en-flag.png" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 close "/data/services.ts" bytes read 15405 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|15405|0|0|0|2f646174612f73657276696365732e7473|]
+Nov 13 12:31:34 10.71.56.0 a265430 close "/data/en-flag.png" bytes read 2720 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|2720|0|0|0|2f646174612f656e2d666c61672e706e67|]
+Nov 13 12:31:34 10.71.56.0 a265430 open "/fonts/Square-Game.otf" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 open "/hooks/use-toast.ts" flags READ mode 0666
+Nov 13 12:31:34 10.71.56.0 a265430 close "/fonts/Square-Game.otf" bytes read 15120 written 0
+Nov 13 12:31:34 10.71.56.0 a265430 [10.71.56.0|get|0|15120|0|0|0|2f666f6e74732f5371756172652d47616d652e6f7466|]
+Nov 13 12:31:35 10.71.56.0 a265430 close "/hooks/use-toast.ts" bytes read 3948 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|3948|0|0|0|2f686f6f6b732f7573652d746f6173742e7473|]
+Nov 13 12:31:35 10.71.56.0 a265430 open "/hooks/use-mobile.ts" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 open "/lib/utils.ts" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 close "/hooks/use-mobile.ts" bytes read 565 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|565|0|0|0|2f686f6f6b732f7573652d6d6f62696c652e7473|]
+Nov 13 12:31:35 10.71.56.0 a265430 close "/lib/utils.ts" bytes read 166 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|166|0|0|0|2f6c69622f7574696c732e7473|]
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/access.log.45.7.gz" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/access.log.45.5.gz" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 close "/logs/access.log.45.7.gz" bytes read 2479 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|2479|0|0|0|2f6c6f67732f6163636573732e6c6f672e34352e372e677a|]
+Nov 13 12:31:35 10.71.56.0 a265430 close "/logs/access.log.45.5.gz" bytes read 1578 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|1578|0|0|0|2f6c6f67732f6163636573732e6c6f672e34352e352e677a|]
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/access.log.45.3.gz" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/access.log.45.4.gz" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 close "/logs/access.log.45.3.gz" bytes read 1503 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|1503|0|0|0|2f6c6f67732f6163636573732e6c6f672e34352e332e677a|]
+Nov 13 12:31:35 10.71.56.0 a265430 close "/logs/access.log.45.4.gz" bytes read 3313 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|3313|0|0|0|2f6c6f67732f6163636573732e6c6f672e34352e342e677a|]
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/access.log.45.2.gz" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/access.log.45.1.gz" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 close "/logs/access.log.45.2.gz" bytes read 4734 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|4734|0|0|0|2f6c6f67732f6163636573732e6c6f672e34352e322e677a|]
+Nov 13 12:31:35 10.71.56.0 a265430 close "/logs/access.log.45.1.gz" bytes read 1652 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|1652|0|0|0|2f6c6f67732f6163636573732e6c6f672e34352e312e677a|]
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/access.log.43.gz" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/access.log.42.gz" flags READ mode 0666
+Nov 13 12:31:35 10.71.56.0 a265430 close "/logs/access.log.43.gz" bytes read 22441 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|22441|0|0|0|2f6c6f67732f6163636573732e6c6f672e34332e677a|]
+Nov 13 12:31:35 10.71.56.0 a265430 close "/logs/access.log.42.gz" bytes read 12520 written 0
+Nov 13 12:31:35 10.71.56.0 a265430 [10.71.56.0|get|0|12520|0|0|0|2f6c6f67732f6163636573732e6c6f672e34322e677a|]
+Nov 13 12:31:35 10.71.56.0 a265430 open "/logs/sftp.log" flags READ mode 0666
