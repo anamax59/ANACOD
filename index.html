@@ -836,9 +836,9 @@
         <div class="container">
             <h2 class="title-sticky">ANACOD</h1>
             <nav class="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">CV</a>
+                <a href="/">Accueil</a>
+                <a href="/contact">Contact</a>
+                <a href="/about">CV</a>
             </nav>
 
         </div>
@@ -951,8 +951,8 @@
         <div class="container">
             <p>&copy; 2020-2025 ANACOD. Tous droits réservés.</p>
             <nav style="margin-top: 1rem;">
-                <a href="contact.html" style="color: #60a5fa; text-decoration: none; margin: 0 1rem;">Contact</a>
-                <a href="about.html" style="color: #60a5fa; text-decoration: none; margin: 0 1rem;">Qui suis-je</a>
+                <a href="/contact" style="color: #60a5fa; text-decoration: none; margin: 0 1rem;">Contact</a>
+                <a href="/about" style="color: #60a5fa; text-decoration: none; margin: 0 1rem;">Qui suis-je</a>
             </nav>
         </div>
     </footer>
@@ -1733,7 +1733,7 @@ const services = [
                     <h3>${service.title['fr']}</h3>
                     <p>${service.description['fr']}</p>
                    <a class="service-btn" 
-   href="contact.html?service=${encodeURIComponent(service.title['fr'])}" 
+   href="/contact?service=${encodeURIComponent(service.title['fr'])}" 
    data-en="More info & contact" data-fr="Plus d’infos & contact">
    ${currentLanguage === 'en' ? 'More info & contact' : 'Plus d’infos & contact'}
 </a>
@@ -1773,7 +1773,7 @@ const services = [
                     <h3>${service.title['fr']}</h3>
                     <p>${service.description['fr']}</p>
                     <a class="service-btn" 
-   href="contact.html?service=${encodeURIComponent(service.title['fr'])}" 
+   href="/contact?service=${encodeURIComponent(service.title['fr'])}" 
    data-en="More info & contact" data-fr="Plus d’infos & contact">
    ${currentLanguage === 'en' ? 'More info & contact' : 'Plus d’infos & contact'}
 </a>
@@ -1968,7 +1968,7 @@ function displayAllServices() {
             <div class="service-icon">${service.icon}</div>
             <h3>${service.title['fr']}</h3>
             <p>${service.description['fr']}</p>
-            <a class="service-btn" href="contact.html?service=${encodeURIComponent(service.title['fr'])}">
+            <a class="service-btn" href="/contact?service=${encodeURIComponent(service.title['fr'])}">
                 Plus d'infos & contact
             </a>
         `;
